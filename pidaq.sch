@@ -916,4 +916,48 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 900 5
 	1    900  5050
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5ED3CDC2
+P 6600 3450
+F 0 "H1" H 6700 3496 50  0000 L CNN
+F 1 "MountingHole" H 6700 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6600 3450 50  0001 C CNN
+F 3 "~" H 6600 3450 50  0001 C CNN
+	1    6600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5ED3DEFD
+P 7550 3450
+F 0 "H3" H 7650 3496 50  0000 L CNN
+F 1 "MountingHole" H 7650 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7550 3450 50  0001 C CNN
+F 3 "~" H 7550 3450 50  0001 C CNN
+	1    7550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5ED3EC92
+P 6600 4150
+F 0 "H2" H 6700 4196 50  0000 L CNN
+F 1 "MountingHole" H 6700 4105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6600 4150 50  0001 C CNN
+F 3 "~" H 6600 4150 50  0001 C CNN
+	1    6600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5ED3F653
+P 7550 4150
+F 0 "H4" H 7650 4196 50  0000 L CNN
+F 1 "MountingHole" H 7650 4105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7550 4150 50  0001 C CNN
+F 3 "~" H 7550 4150 50  0001 C CNN
+	1    7550 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
