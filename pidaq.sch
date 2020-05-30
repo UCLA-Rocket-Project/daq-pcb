@@ -906,10 +906,10 @@ Wire Wire Line
 Wire Wire Line
 	4450 7600 4900 7600
 $Comp
-L Diode:1N4148 D?
+L Diode:1N4148 D1
 U 1 1 5F34BCCE
 P 900 5050
-F 0 "D?" V 946 4971 50  0000 R CNN
+F 0 "D1" V 946 4971 50  0000 R CNN
 F 1 "1N4148" V 855 4971 50  0000 R CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 900 4875 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 900 5050 50  0001 C CNN
