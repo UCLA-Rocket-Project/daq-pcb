@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name LTC2984CLX)(type Legacy)(uri ${KIPRJMOD}/LTC2984CLX.lib)(options "")(descr ""))
+  (lib (name LTC2418IGN)(type Legacy)(uri ${KIPRJMOD}/LTC2418IGN.lib)(options "")(descr ""))
+)
