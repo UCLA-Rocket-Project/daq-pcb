@@ -49,6 +49,7 @@ F 0 "U2" H 2850 1337 60  0000 C CNN
 F 1 "LTC2418IGN-DNP" H 2850 1231 60  0000 C CNN
 F 2 "proj_footprints:LTC2418IGN-PBF" H 2850 1190 60  0001 C CNN
 F 3 "" H 1750 950 60  0000 C CNN
+F 4 "DNP" H 1750 950 50  0001 C CNN "place?"
 	1    1750 950 
 	1    0    0    -1  
 $EndComp
@@ -90,6 +91,7 @@ F 0 "C1" H 865 2246 50  0000 L CNN
 F 1 "10uF" H 865 2155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 788 2050 50  0001 C CNN
 F 3 "~" H 750 2200 50  0001 C CNN
+F 4 "tantalum" H 750 2200 50  0001 C CNN "Dielectric"
 	1    750  2200
 	1    0    0    -1  
 $EndComp
@@ -103,6 +105,7 @@ F 0 "C2" H 1265 2246 50  0000 L CNN
 F 1 "0.1uF" H 1265 2155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1188 2050 50  0001 C CNN
 F 3 "~" H 1150 2200 50  0001 C CNN
+F 4 "ceramic" H 1150 2200 50  0001 C CNN "Dielectric"
 	1    1150 2200
 	1    0    0    -1  
 $EndComp
@@ -155,9 +158,10 @@ L Device:C C4
 U 1 1 5EDDEB23
 P 4950 3250
 F 0 "C4" H 5065 3296 50  0000 L CNN
-F 1 "10uF X7R" H 5065 3205 50  0000 L CNN
+F 1 "10uF" H 5065 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4988 3100 50  0001 C CNN
 F 3 "~" H 4950 3250 50  0001 C CNN
+F 4 "X7R" H 4950 3250 50  0001 C CNN "Dielectric"
 	1    4950 3250
 	1    0    0    -1  
 $EndComp
@@ -166,9 +170,10 @@ L Device:C C6
 U 1 1 5EDDFF20
 P 5500 3650
 F 0 "C6" H 5615 3696 50  0000 L CNN
-F 1 "10uF X5R" H 5615 3605 50  0000 L CNN
+F 1 "10uF" H 5615 3605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5538 3500 50  0001 C CNN
 F 3 "~" H 5500 3650 50  0001 C CNN
+F 4 "X5R" H 5500 3650 50  0001 C CNN "Dielectric"
 	1    5500 3650
 	1    0    0    -1  
 $EndComp
@@ -194,6 +199,7 @@ F 0 "C5" H 5315 3996 50  0000 L CNN
 F 1 "10uF" H 5315 3905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5238 3800 50  0001 C CNN
 F 3 "~" H 5200 3950 50  0001 C CNN
+F 4 "ceramic" H 5200 3950 50  0001 C CNN "Dielectric"
 	1    5200 3950
 	1    0    0    -1  
 $EndComp
@@ -278,6 +284,7 @@ F 0 "C3" H 815 4796 50  0000 L CNN
 F 1 "1uF" H 815 4705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 738 4600 50  0001 C CNN
 F 3 "~" H 700 4750 50  0001 C CNN
+F 4 "ceramic" H 700 4750 50  0001 C CNN "Dielectric"
 	1    700  4750
 	1    0    0    -1  
 $EndComp
@@ -335,6 +342,7 @@ F 0 "U1" H 3150 3687 60  0000 C CNN
 F 1 "LTC2984CLX-DNP" H 3150 3581 60  0000 C CNN
 F 2 "proj_footprints:LTC2984CLX-PBF" H 3150 3540 60  0001 C CNN
 F 3 "" H 1550 3300 60  0000 C CNN
+F 4 "DNP" H 1550 3300 50  0001 C CNN "place?"
 	1    1550 3300
 	1    0    0    -1  
 $EndComp
@@ -346,6 +354,7 @@ F 0 "C14" V 4021 7600 50  0000 C CNN
 F 1 "100pF" V 4112 7600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 7600 50  0001 C CNN
 F 3 "~" H 4250 7600 50  0001 C CNN
+F 4 "ceramic" H 4250 7600 50  0001 C CNN "Dielectric"
 	1    4250 7600
 	0    1    1    0   
 $EndComp
@@ -357,6 +366,7 @@ F 0 "R8" V 3845 7500 50  0000 C CNN
 F 1 "100" V 3936 7500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 7500 50  0001 C CNN
 F 3 "~" H 4050 7500 50  0001 C CNN
+F 4 "1%" H 4050 7500 50  0001 C CNN "Tolerance"
 	1    4050 7500
 	0    1    1    0   
 $EndComp
@@ -370,6 +380,7 @@ F 0 "C13" V 4021 7400 50  0000 C CNN
 F 1 "100pF" V 4112 7400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 7400 50  0001 C CNN
 F 3 "~" H 4250 7400 50  0001 C CNN
+F 4 "ceramic" H 4250 7400 50  0001 C CNN "Dielectric"
 	1    4250 7400
 	0    1    1    0   
 $EndComp
@@ -381,6 +392,7 @@ F 0 "R7" V 3845 7300 50  0000 C CNN
 F 1 "100" V 3936 7300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 7300 50  0001 C CNN
 F 3 "~" H 4050 7300 50  0001 C CNN
+F 4 "1%" H 4050 7300 50  0001 C CNN "Tolerance"
 	1    4050 7300
 	0    1    1    0   
 $EndComp
@@ -394,6 +406,7 @@ F 0 "C12" V 4021 7200 50  0000 C CNN
 F 1 "100pF" V 4112 7200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 7200 50  0001 C CNN
 F 3 "~" H 4250 7200 50  0001 C CNN
+F 4 "ceramic" H 4250 7200 50  0001 C CNN "Dielectric"
 	1    4250 7200
 	0    1    1    0   
 $EndComp
@@ -405,6 +418,7 @@ F 0 "R6" V 3845 7100 50  0000 C CNN
 F 1 "100" V 3936 7100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 7100 50  0001 C CNN
 F 3 "~" H 4050 7100 50  0001 C CNN
+F 4 "1%" H 4050 7100 50  0001 C CNN "Tolerance"
 	1    4050 7100
 	0    1    1    0   
 $EndComp
@@ -418,6 +432,7 @@ F 0 "C11" V 4021 7000 50  0000 C CNN
 F 1 "100pF" V 4112 7000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 7000 50  0001 C CNN
 F 3 "~" H 4250 7000 50  0001 C CNN
+F 4 "ceramic" H 4250 7000 50  0001 C CNN "Dielectric"
 	1    4250 7000
 	0    1    1    0   
 $EndComp
@@ -429,6 +444,7 @@ F 0 "R5" V 3845 6900 50  0000 C CNN
 F 1 "100" V 3936 6900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 6900 50  0001 C CNN
 F 3 "~" H 4050 6900 50  0001 C CNN
+F 4 "1%" H 4050 6900 50  0001 C CNN "Tolerance"
 	1    4050 6900
 	0    1    1    0   
 $EndComp
@@ -442,6 +458,7 @@ F 0 "C10" V 4021 6800 50  0000 C CNN
 F 1 "100pF" V 4112 6800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 6800 50  0001 C CNN
 F 3 "~" H 4250 6800 50  0001 C CNN
+F 4 "ceramic" H 4250 6800 50  0001 C CNN "Dielectric"
 	1    4250 6800
 	0    1    1    0   
 $EndComp
@@ -453,6 +470,7 @@ F 0 "R4" V 3845 6700 50  0000 C CNN
 F 1 "100" V 3936 6700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 6700 50  0001 C CNN
 F 3 "~" H 4050 6700 50  0001 C CNN
+F 4 "1%" H 4050 6700 50  0001 C CNN "Tolerance"
 	1    4050 6700
 	0    1    1    0   
 $EndComp
@@ -566,6 +584,7 @@ F 0 "C22" V 1321 7600 50  0000 C CNN
 F 1 "100pF" V 1412 7600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 7600 50  0001 C CNN
 F 3 "~" H 1550 7600 50  0001 C CNN
+F 4 "ceramic" H 1550 7600 50  0001 C CNN "Dielectric"
 	1    1550 7600
 	0    1    1    0   
 $EndComp
@@ -577,6 +596,7 @@ F 0 "R16" V 1145 7500 50  0000 C CNN
 F 1 "100" V 1236 7500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 7500 50  0001 C CNN
 F 3 "~" H 1350 7500 50  0001 C CNN
+F 4 "1%" H 1350 7500 50  0001 C CNN "Tolerance"
 	1    1350 7500
 	0    1    1    0   
 $EndComp
@@ -590,6 +610,7 @@ F 0 "C21" V 1321 7400 50  0000 C CNN
 F 1 "100pF" V 1412 7400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 7400 50  0001 C CNN
 F 3 "~" H 1550 7400 50  0001 C CNN
+F 4 "ceramic" H 1550 7400 50  0001 C CNN "Dielectric"
 	1    1550 7400
 	0    1    1    0   
 $EndComp
@@ -601,6 +622,7 @@ F 0 "R15" V 1145 7300 50  0000 C CNN
 F 1 "100" V 1236 7300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 7300 50  0001 C CNN
 F 3 "~" H 1350 7300 50  0001 C CNN
+F 4 "1%" H 1350 7300 50  0001 C CNN "Tolerance"
 	1    1350 7300
 	0    1    1    0   
 $EndComp
@@ -614,6 +636,7 @@ F 0 "C20" V 1321 7200 50  0000 C CNN
 F 1 "100pF" V 1412 7200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 7200 50  0001 C CNN
 F 3 "~" H 1550 7200 50  0001 C CNN
+F 4 "ceramic" H 1550 7200 50  0001 C CNN "Dielectric"
 	1    1550 7200
 	0    1    1    0   
 $EndComp
@@ -625,6 +648,7 @@ F 0 "R14" V 1145 7100 50  0000 C CNN
 F 1 "100" V 1236 7100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 7100 50  0001 C CNN
 F 3 "~" H 1350 7100 50  0001 C CNN
+F 4 "1%" H 1350 7100 50  0001 C CNN "Tolerance"
 	1    1350 7100
 	0    1    1    0   
 $EndComp
@@ -638,6 +662,7 @@ F 0 "C19" V 1321 7000 50  0000 C CNN
 F 1 "100pF" V 1412 7000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 7000 50  0001 C CNN
 F 3 "~" H 1550 7000 50  0001 C CNN
+F 4 "ceramic" H 1550 7000 50  0001 C CNN "Dielectric"
 	1    1550 7000
 	0    1    1    0   
 $EndComp
@@ -649,6 +674,7 @@ F 0 "R13" V 1145 6900 50  0000 C CNN
 F 1 "100" V 1236 6900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 6900 50  0001 C CNN
 F 3 "~" H 1350 6900 50  0001 C CNN
+F 4 "1%" H 1350 6900 50  0001 C CNN "Tolerance"
 	1    1350 6900
 	0    1    1    0   
 $EndComp
@@ -662,6 +688,7 @@ F 0 "C18" V 1321 6800 50  0000 C CNN
 F 1 "100pF" V 1412 6800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 6800 50  0001 C CNN
 F 3 "~" H 1550 6800 50  0001 C CNN
+F 4 "ceramic" H 1550 6800 50  0001 C CNN "Dielectric"
 	1    1550 6800
 	0    1    1    0   
 $EndComp
@@ -673,6 +700,7 @@ F 0 "R12" V 1145 6700 50  0000 C CNN
 F 1 "100" V 1236 6700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 6700 50  0001 C CNN
 F 3 "~" H 1350 6700 50  0001 C CNN
+F 4 "1%" H 1350 6700 50  0001 C CNN "Tolerance"
 	1    1350 6700
 	0    1    1    0   
 $EndComp
@@ -908,6 +936,7 @@ F 0 "D1" V 946 4971 50  0000 R CNN
 F 1 "1N4148" V 855 4971 50  0000 R CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 900 4875 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 900 5050 50  0001 C CNN
+F 4 "DNP" H 900 5050 50  0001 C CNN "place?"
 	1    900  5050
 	0    -1   -1   0   
 $EndComp
@@ -965,6 +994,7 @@ F 0 "C7" H 765 4096 50  0000 L CNN
 F 1 "0.1uF" H 765 4005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 688 3900 50  0001 C CNN
 F 3 "~" H 650 4050 50  0001 C CNN
+F 4 "ceramic" H 650 4050 50  0001 C CNN "Dielectric"
 	1    650  4050
 	1    0    0    -1  
 $EndComp
@@ -976,6 +1006,7 @@ F 0 "C8" H 1115 3796 50  0000 L CNN
 F 1 "0.1uF" H 1115 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1038 3600 50  0001 C CNN
 F 3 "~" H 1000 3750 50  0001 C CNN
+F 4 "ceramic" H 1000 3750 50  0001 C CNN "Dielectric"
 	1    1000 3750
 	1    0    0    -1  
 $EndComp
@@ -989,4 +1020,8 @@ Text GLabel 650  3900 0    50   Input ~ 0
 GND
 Text GLabel 1000 3900 0    50   Input ~ 0
 GND
+Text Notes 7150 6850 0    100  ~ 0
+Ground DAQ Board
+Text Notes 7450 7550 0    100  ~ 0
+DAQ
 $EndSCHEMATC
