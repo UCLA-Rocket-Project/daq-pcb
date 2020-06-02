@@ -789,80 +789,69 @@ Thermocouple Sensors\n
 $Comp
 L power:+5V #PWR0101
 U 1 1 5F02F8BC
-P 6700 1300
-F 0 "#PWR0101" H 6700 1150 50  0001 C CNN
-F 1 "+5V" H 6715 1473 50  0000 C CNN
-F 2 "" H 6700 1300 50  0001 C CNN
-F 3 "" H 6700 1300 50  0001 C CNN
-	1    6700 1300
+P 8950 1300
+F 0 "#PWR0101" H 8950 1150 50  0001 C CNN
+F 1 "+5V" H 8965 1473 50  0000 C CNN
+F 2 "" H 8950 1300 50  0001 C CNN
+F 3 "" H 8950 1300 50  0001 C CNN
+	1    8950 1300
 	1    0    0    -1  
 $EndComp
-Text GLabel 6500 1300 0    50   Input ~ 0
+Text GLabel 8750 1300 0    50   Input ~ 0
 +5V
-Text GLabel 6500 1500 0    50   Input ~ 0
+Text GLabel 8750 1600 0    50   Input ~ 0
 GND
 $Comp
 L power:GND #PWR0102
 U 1 1 5F02FCDF
-P 6700 1500
-F 0 "#PWR0102" H 6700 1250 50  0001 C CNN
-F 1 "GND" H 6705 1327 50  0000 C CNN
-F 2 "" H 6700 1500 50  0001 C CNN
-F 3 "" H 6700 1500 50  0001 C CNN
-	1    6700 1500
+P 8950 1600
+F 0 "#PWR0102" H 8950 1350 50  0001 C CNN
+F 1 "GND" H 8955 1427 50  0000 C CNN
+F 2 "" H 8950 1600 50  0001 C CNN
+F 3 "" H 8950 1600 50  0001 C CNN
+	1    8950 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 1300 6500 1300
+	8950 1300 8750 1300
 Wire Wire Line
-	6500 1500 6700 1500
-$Comp
-L Connector:Conn_01x02_Male J5
-U 1 1 5F061D74
-P 7100 1450
-F 0 "J5" H 7072 1332 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 7072 1423 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7100 1450 50  0001 C CNN
-F 3 "~" H 7100 1450 50  0001 C CNN
-	1    7100 1450
-	-1   0    0    1   
-$EndComp
+	8750 1600 8950 1600
 Wire Wire Line
-	6900 1350 6700 1350
+	9150 1350 8950 1350
 Wire Wire Line
-	6700 1350 6700 1300
-Connection ~ 6700 1300
+	8950 1350 8950 1300
+Connection ~ 8950 1300
 Wire Wire Line
-	6900 1450 6700 1450
+	9150 1550 8950 1550
 Wire Wire Line
-	6700 1450 6700 1500
-Connection ~ 6700 1500
+	8950 1550 8950 1600
+Connection ~ 8950 1600
 $Comp
 L Connector:Conn_01x08_Female J6
 U 1 1 5F088E4C
-P 7550 2450
-F 0 "J6" H 7578 2426 50  0000 L CNN
-F 1 "Conn_01x08_Female" H 7578 2335 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7550 2450 50  0001 C CNN
-F 3 "~" H 7550 2450 50  0001 C CNN
-	1    7550 2450
+P 9350 2500
+F 0 "J6" H 9378 2476 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 9378 2385 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9350 2500 50  0001 C CNN
+F 3 "~" H 9350 2500 50  0001 C CNN
+	1    9350 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 7350 2850 0    50   Input ~ 0
+Text GLabel 9150 2900 0    50   Input ~ 0
 CS_SEN
-Text GLabel 7350 2150 0    50   Input ~ 0
+Text GLabel 9150 2200 0    50   Input ~ 0
 CS_TC
-Text GLabel 7350 2250 0    50   Input ~ 0
+Text GLabel 9150 2300 0    50   Input ~ 0
 RST
-Text GLabel 7350 2350 0    50   Input ~ 0
+Text GLabel 9150 2400 0    50   Input ~ 0
 IRQ
-Text GLabel 7350 2450 0    50   Input ~ 0
+Text GLabel 9150 2500 0    50   Input ~ 0
 GND
-Text GLabel 7350 2650 0    50   Input ~ 0
+Text GLabel 9150 2700 0    50   Input ~ 0
 SCLK
-Text GLabel 7350 2550 0    50   Input ~ 0
+Text GLabel 9150 2600 0    50   Input ~ 0
 MOSI
-Text GLabel 7350 2750 0    50   Input ~ 0
+Text GLabel 6750 2850 0    50   Input ~ 0
 MISO
 $Comp
 L Connector:Screw_Terminal_01x10 J3
@@ -943,45 +932,45 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5ED3CDC2
-P 6600 3450
-F 0 "H1" H 6700 3496 50  0000 L CNN
-F 1 "MountingHole" H 6700 3405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6600 3450 50  0001 C CNN
-F 3 "~" H 6600 3450 50  0001 C CNN
-	1    6600 3450
+P 6250 5500
+F 0 "H1" H 6350 5546 50  0000 L CNN
+F 1 "MountingHole" H 6350 5455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6250 5500 50  0001 C CNN
+F 3 "~" H 6250 5500 50  0001 C CNN
+	1    6250 5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5ED3DEFD
-P 7550 3450
-F 0 "H3" H 7650 3496 50  0000 L CNN
-F 1 "MountingHole" H 7650 3405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 7550 3450 50  0001 C CNN
-F 3 "~" H 7550 3450 50  0001 C CNN
-	1    7550 3450
+P 7200 5500
+F 0 "H3" H 7300 5546 50  0000 L CNN
+F 1 "MountingHole" H 7300 5455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7200 5500 50  0001 C CNN
+F 3 "~" H 7200 5500 50  0001 C CNN
+	1    7200 5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5ED3EC92
-P 6600 4150
-F 0 "H2" H 6700 4196 50  0000 L CNN
-F 1 "MountingHole" H 6700 4105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6600 4150 50  0001 C CNN
-F 3 "~" H 6600 4150 50  0001 C CNN
-	1    6600 4150
+P 6250 6200
+F 0 "H2" H 6350 6246 50  0000 L CNN
+F 1 "MountingHole" H 6350 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6250 6200 50  0001 C CNN
+F 3 "~" H 6250 6200 50  0001 C CNN
+	1    6250 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5ED3F653
-P 7550 4150
-F 0 "H4" H 7650 4196 50  0000 L CNN
-F 1 "MountingHole" H 7650 4105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 7550 4150 50  0001 C CNN
-F 3 "~" H 7550 4150 50  0001 C CNN
-	1    7550 4150
+P 7200 6200
+F 0 "H4" H 7300 6246 50  0000 L CNN
+F 1 "MountingHole" H 7300 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7200 6200 50  0001 C CNN
+F 3 "~" H 7200 6200 50  0001 C CNN
+	1    7200 6200
 	1    0    0    -1  
 $EndComp
 Text Notes 650  6450 0    50   ~ 0
@@ -1024,4 +1013,44 @@ Text Notes 7150 6850 0    100  ~ 0
 Ground DAQ Board
 Text Notes 7450 7550 0    100  ~ 0
 DAQ
+$Comp
+L SN74LV1T34:SN74LV1T34DCKR U3
+U 1 1 5ED7754A
+P 7450 2850
+F 0 "U3" H 7500 3636 60  0000 C CNN
+F 1 "SN74LV1T34DCKR" H 7500 3530 60  0000 C CNN
+F 2 "proj_footprints:SN74LV1T34DCKR" H 7450 2790 60  0001 C CNN
+F 3 "" H 7450 2850 60  0000 C CNN
+	1    7450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J5
+U 1 1 5EDA59D3
+P 9350 1450
+F 0 "J5" H 9458 1731 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 9458 1640 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9350 1450 50  0001 C CNN
+F 3 "~" H 9350 1450 50  0001 C CNN
+	1    9350 1450
+	-1   0    0    1   
+$EndComp
+Text GLabel 9150 1450 0    50   Input ~ 0
+VDOUT
+Text GLabel 6750 2450 0    50   Input ~ 0
+VDOUT
+Text GLabel 8250 3250 2    50   Input ~ 0
+GND
+Wire Wire Line
+	9150 2800 8250 2800
+Wire Wire Line
+	8250 2800 8250 2850
+Wire Notes Line
+	5900 3650 11150 3650
+Wire Notes Line
+	11150 3650 11150 3600
+Text Notes 10050 3550 0    50   ~ 0
+Digital IO and Power Supply
+Text Notes 8200 1950 2    50   ~ 0
+All DAQ input pins have V_high=2.5V\n\nMISO is level shifted to VDOUT in case your\nmicrocontroller is not 5V input tolerant (Raspberry PI)
 $EndSCHEMATC
