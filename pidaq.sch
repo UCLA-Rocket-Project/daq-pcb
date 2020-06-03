@@ -16,27 +16,27 @@ $EndDescr
 $Comp
 L Connector:Screw_Terminal_01x08 J2
 U 1 1 5EDBB95D
-P 4550 1250
+P 4550 1350
 AR Path="/5EDBB95D" Ref="J2"  Part="1" 
 AR Path="/5ED56214/5EDBB95D" Ref="J?"  Part="1" 
-F 0 "J2" H 4630 1242 50  0000 L CNN
-F 1 "Screw_Terminal_01x08" H 4630 1151 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal" H 4550 1250 50  0001 C CNN
-F 3 "~" H 4550 1250 50  0001 C CNN
-	1    4550 1250
-	1    0    0    -1  
+F 0 "J2" H 4630 1342 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" H 4630 1251 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal" H 4550 1350 50  0001 C CNN
+F 3 "~" H 4550 1350 50  0001 C CNN
+	1    4550 1350
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x08 J1
 U 1 1 5EDBB963
-P 900 1250
+P 1550 1250
 AR Path="/5EDBB963" Ref="J1"  Part="1" 
 AR Path="/5ED56214/5EDBB963" Ref="J?"  Part="1" 
-F 0 "J1" H 818 1767 50  0000 C CNN
-F 1 "Screw_Terminal_01x08" H 818 1676 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal" H 900 1250 50  0001 C CNN
-F 3 "~" H 900 1250 50  0001 C CNN
-	1    900  1250
+F 0 "J1" H 1468 1767 50  0000 C CNN
+F 1 "Screw_Terminal_01x08" H 1468 1676 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal" H 1550 1250 50  0001 C CNN
+F 3 "~" H 1550 1250 50  0001 C CNN
+	1    1550 1250
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -134,7 +134,7 @@ MISO
 Text GLabel 3950 1950 2    50   Input ~ 0
 SCLK
 Text GLabel 3950 2150 2    50   Input ~ 0
-CS_SEN
+~SEN
 Text Notes 5600 2750 2    50   ~ 0
 Analog Sensors \n(e.g. Pressure Transducers, Load Cells, Hall Effect Sensors)
 Text Label 4350 1650 2    50   ~ 0
@@ -208,7 +208,7 @@ GND
 Text GLabel 4750 3900 2    50   Input ~ 0
 RST
 Text GLabel 4750 4000 2    50   Input ~ 0
-CS_TC
+~TC
 Text GLabel 4750 4100 2    50   Input ~ 0
 MOSI
 Text GLabel 4750 4200 2    50   Input ~ 0
@@ -536,38 +536,6 @@ Wire Wire Line
 Connection ~ 3900 7500
 Wire Wire Line
 	3900 7500 3750 7500
-Text GLabel 1750 950  0    50   Input ~ 0
-SEN8
-Text GLabel 1750 1050 0    50   Input ~ 0
-SEN9
-Text GLabel 1750 1150 0    50   Input ~ 0
-SEN10
-Text GLabel 1750 1250 0    50   Input ~ 0
-SEN11
-Text GLabel 1750 1350 0    50   Input ~ 0
-SEN12
-Text GLabel 1750 1450 0    50   Input ~ 0
-SEN13
-Text GLabel 1750 1550 0    50   Input ~ 0
-SEN14
-Text GLabel 1750 1650 0    50   Input ~ 0
-SEN15
-Text GLabel 1100 950  2    50   Input ~ 0
-SEN15
-Text GLabel 1100 1050 2    50   Input ~ 0
-SEN14
-Text GLabel 1100 1150 2    50   Input ~ 0
-SEN13
-Text GLabel 1100 1250 2    50   Input ~ 0
-SEN12
-Text GLabel 1100 1350 2    50   Input ~ 0
-SEN11
-Text GLabel 1100 1450 2    50   Input ~ 0
-SEN10
-Text GLabel 1100 1550 2    50   Input ~ 0
-SEN9
-Text GLabel 1100 1650 2    50   Input ~ 0
-SEN8
 Text GLabel 4750 4700 2    50   Input ~ 0
 TC8+
 Text GLabel 4750 4600 2    50   Input ~ 0
@@ -784,7 +752,7 @@ Text GLabel 3750 7300 0    50   Input ~ 0
 TC6+
 Text GLabel 3750 7100 0    50   Input ~ 0
 TC7+
-Text Notes 5000 7700 0    50   ~ 0
+Text Notes 4850 5950 0    50   ~ 0
 Thermocouple Sensors\n
 $Comp
 L power:+5V #PWR0101
@@ -838,9 +806,7 @@ F 3 "~" H 9350 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 9150 2900 0    50   Input ~ 0
-CS_SEN
-Text GLabel 9150 2200 0    50   Input ~ 0
-CS_TC
+~SEN
 Text GLabel 9150 2300 0    50   Input ~ 0
 RST
 Text GLabel 9150 2400 0    50   Input ~ 0
@@ -856,24 +822,13 @@ MISO
 $Comp
 L Connector:Screw_Terminal_01x10 J3
 U 1 1 5F0EBDBF
-P 2350 7100
-F 0 "J3" H 2430 7092 50  0000 L CNN
-F 1 "Screw_Terminal_01x10" H 2430 7001 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-10-3.5-H_1x10_P3.50mm_Horizontal" H 2350 7100 50  0001 C CNN
-F 3 "~" H 2350 7100 50  0001 C CNN
-	1    2350 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x10 J4
-U 1 1 5F0EED09
-P 5100 7100
-F 0 "J4" H 5180 7092 50  0000 L CNN
-F 1 "Screw_Terminal_01x10" H 5180 7001 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-10-3.5-H_1x10_P3.50mm_Horizontal" H 5100 7100 50  0001 C CNN
-F 3 "~" H 5100 7100 50  0001 C CNN
-	1    5100 7100
-	1    0    0    -1  
+P 2350 7200
+F 0 "J3" H 2430 7192 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" H 2430 7101 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-10-3.5-H_1x10_P3.50mm_Horizontal" H 2350 7200 50  0001 C CNN
+F 3 "~" H 2350 7200 50  0001 C CNN
+	1    2350 7200
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	1750 7600 2150 7600
@@ -896,27 +851,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 6700 2150 6700
 Wire Wire Line
-	4150 6700 4900 6700
-Wire Wire Line
-	4450 6800 4900 6800
-Wire Wire Line
-	4150 6900 4900 6900
-Wire Wire Line
 	4350 7000 4450 7000
-Wire Wire Line
-	4450 7000 4900 7000
-Wire Wire Line
-	4150 7100 4900 7100
-Wire Wire Line
-	4450 7200 4900 7200
-Wire Wire Line
-	4150 7300 4900 7300
-Wire Wire Line
-	4450 7400 4900 7400
-Wire Wire Line
-	4150 7500 4900 7500
-Wire Wire Line
-	4450 7600 4900 7600
 $Comp
 L Diode:1N4148 D1
 U 1 1 5F34BCCE
@@ -932,45 +867,45 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5ED3CDC2
-P 6250 5500
-F 0 "H1" H 6350 5546 50  0000 L CNN
-F 1 "MountingHole" H 6350 5455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6250 5500 50  0001 C CNN
-F 3 "~" H 6250 5500 50  0001 C CNN
-	1    6250 5500
+P 9550 3950
+F 0 "H1" H 9650 3996 50  0000 L CNN
+F 1 "MountingHole" H 9650 3905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9550 3950 50  0001 C CNN
+F 3 "~" H 9550 3950 50  0001 C CNN
+	1    9550 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5ED3DEFD
-P 7200 5500
-F 0 "H3" H 7300 5546 50  0000 L CNN
-F 1 "MountingHole" H 7300 5455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 7200 5500 50  0001 C CNN
-F 3 "~" H 7200 5500 50  0001 C CNN
-	1    7200 5500
+P 10500 3950
+F 0 "H3" H 10600 3996 50  0000 L CNN
+F 1 "MountingHole" H 10600 3905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10500 3950 50  0001 C CNN
+F 3 "~" H 10500 3950 50  0001 C CNN
+	1    10500 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5ED3EC92
-P 6250 6200
-F 0 "H2" H 6350 6246 50  0000 L CNN
-F 1 "MountingHole" H 6350 6155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6250 6200 50  0001 C CNN
-F 3 "~" H 6250 6200 50  0001 C CNN
-	1    6250 6200
+P 9550 4650
+F 0 "H2" H 9650 4696 50  0000 L CNN
+F 1 "MountingHole" H 9650 4605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9550 4650 50  0001 C CNN
+F 3 "~" H 9550 4650 50  0001 C CNN
+	1    9550 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5ED3F653
-P 7200 6200
-F 0 "H4" H 7300 6246 50  0000 L CNN
-F 1 "MountingHole" H 7300 6155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 7200 6200 50  0001 C CNN
-F 3 "~" H 7200 6200 50  0001 C CNN
-	1    7200 6200
+P 10500 4650
+F 0 "H4" H 10600 4696 50  0000 L CNN
+F 1 "MountingHole" H 10600 4605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10500 4650 50  0001 C CNN
+F 3 "~" H 10500 4650 50  0001 C CNN
+	1    10500 4650
 	1    0    0    -1  
 $EndComp
 Text Notes 650  6450 0    50   ~ 0
@@ -1052,5 +987,42 @@ Wire Notes Line
 Text Notes 10050 3550 0    50   ~ 0
 Digital IO and Power Supply
 Text Notes 8200 1950 2    50   ~ 0
-All DAQ input pins have V_high=2.5V\n\nMISO is level shifted to VDOUT in case your\nmicrocontroller is not 5V input tolerant (Raspberry PI)
+All DAQ input pins have V_high=2.5V\nShould be good for 3.3 and 5V logic\n\nMISO is level shifted to VDOUT in case your\nmicrocontroller is not 5V input tolerant (Raspberry PI)
+Text Label 8350 2800 0    50   ~ 0
+MISO_SAFE
+Text Notes 950  700  0    50   ~ 0
+Flip the SEN8-15 for layout
+Text GLabel 9150 2200 0    50   Input ~ 0
+~TC
+Wire Wire Line
+	4450 7600 4900 7600
+Wire Wire Line
+	4150 7500 4900 7500
+Wire Wire Line
+	4450 7400 4900 7400
+Wire Wire Line
+	4150 7300 4900 7300
+Wire Wire Line
+	4450 7200 4900 7200
+Wire Wire Line
+	4150 7100 4900 7100
+Wire Wire Line
+	4450 7000 4900 7000
+Wire Wire Line
+	4150 6900 4900 6900
+Wire Wire Line
+	4450 6800 4900 6800
+Wire Wire Line
+	4150 6700 4900 6700
+$Comp
+L Connector:Screw_Terminal_01x10 J4
+U 1 1 5F0EED09
+P 5100 7200
+F 0 "J4" H 5180 7192 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" H 5180 7101 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-10-3.5-H_1x10_P3.50mm_Horizontal" H 5100 7200 50  0001 C CNN
+F 3 "~" H 5100 7200 50  0001 C CNN
+	1    5100 7200
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
