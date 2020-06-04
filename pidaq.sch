@@ -864,50 +864,6 @@ F 4 "DNP" H 900 5050 50  0001 C CNN "place?"
 	1    900  5050
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5ED3CDC2
-P 9550 3950
-F 0 "H1" H 9650 3996 50  0000 L CNN
-F 1 "MountingHole" H 9650 3905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9550 3950 50  0001 C CNN
-F 3 "~" H 9550 3950 50  0001 C CNN
-	1    9550 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5ED3DEFD
-P 10500 3950
-F 0 "H3" H 10600 3996 50  0000 L CNN
-F 1 "MountingHole" H 10600 3905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10500 3950 50  0001 C CNN
-F 3 "~" H 10500 3950 50  0001 C CNN
-	1    10500 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5ED3EC92
-P 9550 4650
-F 0 "H2" H 9650 4696 50  0000 L CNN
-F 1 "MountingHole" H 9650 4605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9550 4650 50  0001 C CNN
-F 3 "~" H 9550 4650 50  0001 C CNN
-	1    9550 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5ED3F653
-P 10500 4650
-F 0 "H4" H 10600 4696 50  0000 L CNN
-F 1 "MountingHole" H 10600 4605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10500 4650 50  0001 C CNN
-F 3 "~" H 10500 4650 50  0001 C CNN
-	1    10500 4650
-	1    0    0    -1  
-$EndComp
 Text Notes 650  6450 0    50   ~ 0
 KiCAD won't let me move the labels, but each screw is connected to a RC filter:\nResistor: 100 Ohm\nCapacitor: 100pF
 $Comp
@@ -1025,4 +981,66 @@ F 3 "~" H 5100 7200 50  0001 C CNN
 	1    5100 7200
 	1    0    0    1   
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EDC0B75
+P 9500 4150
+F 0 "H1" H 9600 4199 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9600 4108 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9500 4150 50  0001 C CNN
+F 3 "~" H 9500 4150 50  0001 C CNN
+	1    9500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EDC14E8
+P 10150 4150
+F 0 "H3" H 10250 4199 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10250 4108 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 10150 4150 50  0001 C CNN
+F 3 "~" H 10150 4150 50  0001 C CNN
+	1    10150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5EDC1970
+P 9500 4600
+F 0 "H2" H 9600 4649 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9600 4558 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9500 4600 50  0001 C CNN
+F 3 "~" H 9500 4600 50  0001 C CNN
+	1    9500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5EDC2A10
+P 10150 4600
+F 0 "H4" H 10250 4649 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10250 4558 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 10150 4600 50  0001 C CNN
+F 3 "~" H 10150 4600 50  0001 C CNN
+	1    10150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4250 9850 4250
+Wire Wire Line
+	9850 4250 9850 4700
+Wire Wire Line
+	9850 4700 9500 4700
+Connection ~ 9850 4250
+Wire Wire Line
+	9850 4250 10150 4250
+Wire Wire Line
+	9850 4700 10150 4700
+Connection ~ 9850 4700
+Wire Wire Line
+	9850 4700 9850 4850
+Wire Wire Line
+	9850 4850 9950 4850
+Text GLabel 9950 4850 2    50   Input ~ 0
+GND
 $EndSCHEMATC
