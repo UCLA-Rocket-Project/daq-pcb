@@ -2,4 +2,6 @@
   (lib (name LTC2984CLX)(type Legacy)(uri ${KIPRJMOD}/LTC2984CLX.lib)(options "")(descr ""))
   (lib (name LTC2418IGN)(type Legacy)(uri ${KIPRJMOD}/LTC2418IGN.lib)(options "")(descr ""))
   (lib (name SN74LV1T34)(type Legacy)(uri ${KIPRJMOD}/SN74LV1T34.lib)(options "")(descr ""))
+  (lib (name LTC2449)(type Legacy)(uri ${KIPRJMOD}/LTC2449.lib)(options "")(descr ""))
+  (lib (name INA126U)(type Legacy)(uri ${KIPRJMOD}/INA126U.lib)(options "")(descr ""))
 )
