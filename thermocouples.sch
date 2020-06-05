@@ -123,23 +123,9 @@ F 4 "ceramic" H 3350 3150 50  0001 C CNN "Dielectric"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 3200 3550 3300
-Wire Wire Line
-	3550 3200 4200 3200
-Wire Wire Line
 	3350 2900 3350 3000
 Wire Wire Line
 	3350 2900 4050 2900
-Text GLabel 4200 3600 0    50   Input ~ 0
-TC0+
-Text GLabel 4200 3700 0    50   Input ~ 0
-TC1+
-Text GLabel 4200 3800 0    50   Input ~ 0
-TC2+
-Text GLabel 4200 3900 0    50   Input ~ 0
-TC3+
-Text GLabel 4200 4000 0    50   Input ~ 0
-TC4+
 Text GLabel 7400 3400 2    50   Input ~ 0
 TC5+
 Text GLabel 7400 3300 2    50   Input ~ 0
@@ -555,13 +541,13 @@ Thermocouple Sensors\n
 $Comp
 L Connector:Screw_Terminal_01x10 J1
 U 1 1 5EE8305E
-P 5000 5600
-F 0 "J1" H 5080 5592 50  0000 L CNN
-F 1 "Screw_Terminal_01x10" H 5080 5501 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 5000 5600 50  0001 C CNN
-F 3 "~" H 5000 5600 50  0001 C CNN
-	1    5000 5600
-	1    0    0    1   
+P 5000 5500
+F 0 "J1" H 5080 5492 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" H 5080 5401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 5000 5500 50  0001 C CNN
+F 3 "~" H 5000 5500 50  0001 C CNN
+	1    5000 5500
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4400 6000 4800 6000
@@ -588,14 +574,14 @@ Wire Wire Line
 $Comp
 L Diode:1N4148 D1
 U 1 1 5EE83070
-P 3550 3450
-F 0 "D1" V 3596 3371 50  0000 R CNN
-F 1 "1N4148" V 3505 3371 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3550 3275 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3550 3450 50  0001 C CNN
-F 4 "DNP" H 3550 3450 50  0001 C CNN "place?"
-	1    3550 3450
-	0    -1   -1   0   
+P 7750 3950
+F 0 "D1" V 7796 3871 50  0000 R CNN
+F 1 "1N4148" V 7705 3871 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7750 3775 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7750 3950 50  0001 C CNN
+F 4 "DNP" H 7750 3950 50  0001 C CNN "place?"
+	1    7750 3950
+	0    1    -1   0   
 $EndComp
 Text Notes 3300 4850 0    50   ~ 0
 KiCAD won't let me move the labels, but each screw is connected to a RC filter:\nResistor: 100 Ohm\nCapacitor: 100pF
@@ -652,13 +638,13 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x10 J2
 U 1 1 5EE83094
-P 7750 5600
-F 0 "J2" H 7830 5592 50  0000 L CNN
-F 1 "Screw_Terminal_01x10" H 7830 5501 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 7750 5600 50  0001 C CNN
-F 3 "~" H 7750 5600 50  0001 C CNN
-	1    7750 5600
-	1    0    0    1   
+P 7750 5500
+F 0 "J2" H 7830 5492 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" H 7830 5401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 7750 5500 50  0001 C CNN
+F 3 "~" H 7750 5500 50  0001 C CNN
+	1    7750 5500
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7400 1900 8150 1900
@@ -678,7 +664,7 @@ AR Path="/5EE830A1" Ref="U?"  Part="1"
 AR Path="/5EE48E39/5EE830A1" Ref="U1"  Part="1" 
 F 0 "U1" H 5800 2087 60  0000 C CNN
 F 1 "LTC2984CLX-DNP" H 5800 1981 60  0000 C CNN
-F 2 "footprints:LTC2418IGN-PBF" H 5800 1940 60  0001 C CNN
+F 2 "footprints:LTC2984CLX-PBF" H 5800 1940 60  0001 C CNN
 F 3 "" H 4200 1700 60  0000 C CNN
 F 4 "DNP" H 4200 1700 50  0001 C CNN "place?"
 	1    4200 1700
@@ -694,7 +680,7 @@ Text HLabel 3650 2300 0    50   Input ~ 0
 GND
 Text HLabel 3350 3300 0    50   Input ~ 0
 GND
-Text HLabel 3550 3600 0    50   Input ~ 0
+Text HLabel 7750 4100 2    50   Input ~ 0
 GND
 Text HLabel 8150 2350 2    50   Input ~ 0
 GND
@@ -724,4 +710,38 @@ Text HLabel 3900 1700 0    50   Input ~ 0
 +5V
 Text HLabel 4200 3100 0    50   Input ~ 0
 GND
+Text Label 4800 5100 2    50   ~ 0
+TC4RAW
+Text Label 4800 5300 2    50   ~ 0
+TC3RAQ
+Text Label 4800 5500 2    50   ~ 0
+TC2RAW
+Text Label 4800 5700 2    50   ~ 0
+TC1RAW
+Text Label 4800 5900 2    50   ~ 0
+TC0RAW
+Text Label 7550 5100 2    50   ~ 0
+TC9RAW
+Text Label 7550 5300 2    50   ~ 0
+TC8RAW
+Text Label 7550 5500 2    50   ~ 0
+TC7RAW
+Text Label 7550 5700 2    50   ~ 0
+TC6RAW
+Text Label 7550 5900 2    50   ~ 0
+TC5RAW
+Text GLabel 4200 4000 0    50   Input ~ 0
+TC4+
+Text GLabel 4200 3900 0    50   Input ~ 0
+TC3+
+Text GLabel 4200 3800 0    50   Input ~ 0
+TC2+
+Text GLabel 4200 3700 0    50   Input ~ 0
+TC1+
+Text GLabel 4200 3600 0    50   Input ~ 0
+TC0+
+Wire Wire Line
+	7400 3800 7750 3800
+Text Label 7600 3800 2    50   ~ 0
+CJ
 $EndSCHEMATC

@@ -248,34 +248,42 @@ Text GLabel 7800 1600 0    50   Input ~ 0
 LC+
 Text GLabel 7800 2400 0    50   Input ~ 0
 LC-
+Text GLabel 10000 1250 0    50   Input ~ 0
+LC+
+Text GLabel 10000 1150 0    50   Input ~ 0
+LC-
+Text GLabel 10100 2100 0    50   Input ~ 0
++EXC
+Text GLabel 10100 2000 0    50   Input ~ 0
+LC
 $Comp
-L Connector:Screw_Terminal_01x02 J7
-U 1 1 5EEF2437
-P 10250 1150
-F 0 "J7" H 10330 1142 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 10330 1051 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 10250 1150 50  0001 C CNN
-F 3 "~" H 10250 1150 50  0001 C CNN
-	1    10250 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J8
-U 1 1 5EEF4A47
-P 10250 1750
-F 0 "J8" H 10222 1632 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 10222 1723 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10250 1750 50  0001 C CNN
-F 3 "~" H 10250 1750 50  0001 C CNN
-	1    10250 1750
+L Connector:Conn_01x03_Male J8
+U 1 1 5EF5E577
+P 10300 2000
+F 0 "J8" H 10272 1932 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10272 2023 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10300 2000 50  0001 C CNN
+F 3 "~" H 10300 2000 50  0001 C CNN
+	1    10300 2000
 	-1   0    0    1   
 $EndComp
-Text GLabel 10050 1150 0    50   Input ~ 0
-LC+
-Text GLabel 10050 1250 0    50   Input ~ 0
-LC-
-Text GLabel 10050 1650 0    50   Input ~ 0
+Text GLabel 10100 1900 0    50   Input ~ 0
+SEN0
+Text Notes 10900 1800 2    50   ~ 0
+Allow shorting LC and SEN0
+$Comp
+L Connector:Screw_Terminal_01x04 J7
+U 1 1 5EF619ED
+P 10200 1150
+F 0 "J7" H 10280 1142 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 10280 1051 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" H 10200 1150 50  0001 C CNN
+F 3 "~" H 10200 1150 50  0001 C CNN
+	1    10200 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 10000 1050 0    50   Input ~ 0
 +EXC
-Text GLabel 10050 1750 0    50   Input ~ 0
-LC
+Text GLabel 10000 1350 0    50   Input ~ 0
+GND
 $EndSCHEMATC

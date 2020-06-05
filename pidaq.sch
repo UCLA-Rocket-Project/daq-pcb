@@ -64,15 +64,15 @@ F 3 "~" H 9350 2500 50  0001 C CNN
 	1    9350 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 9150 2900 0    50   Input ~ 0
+Text GLabel 9150 2200 0    50   Input ~ 0
 ~SEN
-Text GLabel 9150 2400 0    50   Input ~ 0
-IRQ
 Text GLabel 9150 2500 0    50   Input ~ 0
-GND
-Text GLabel 9150 2700 0    50   Input ~ 0
-SCLK
+IRQ
 Text GLabel 9150 2600 0    50   Input ~ 0
+GND
+Text GLabel 9150 2800 0    50   Input ~ 0
+SCLK
+Text GLabel 9150 2700 0    50   Input ~ 0
 MOSI
 Text GLabel 6750 2850 0    50   Input ~ 0
 MISO
@@ -107,8 +107,6 @@ VDOUT
 Text GLabel 8250 3250 2    50   Input ~ 0
 GND
 Wire Wire Line
-	9150 2800 8250 2800
-Wire Wire Line
 	8250 2800 8250 2850
 Wire Notes Line
 	11150 3650 11150 3600
@@ -118,7 +116,7 @@ Text Notes 8300 1850 2    50   ~ 0
 All DAQ input pins have V_high=2.5V\nShould be good for 3.3 and 5V logic\n\nMISO is level shifted to VDOUT in case your\nmicrocontroller is not 5V input tolerant (Raspberry PI)
 Text Label 8350 2800 0    50   ~ 0
 MISO_SAFE
-Text GLabel 9150 2200 0    50   Input ~ 0
+Text GLabel 9150 2300 0    50   Input ~ 0
 ~TC
 $Comp
 L Mechanical:MountingHole_Pad H1
@@ -236,6 +234,12 @@ Text GLabel 4600 4700 2    50   Input ~ 0
 ~TC
 Text GLabel 4600 4850 2    50   Input ~ 0
 ~RST
-Text GLabel 9150 2300 0    50   Input ~ 0
+Text GLabel 9150 2400 0    50   Input ~ 0
 ~RST
+Wire Wire Line
+	8250 2800 8800 2800
+Wire Wire Line
+	8800 2800 8800 2900
+Wire Wire Line
+	8800 2900 9150 2900
 $EndSCHEMATC
