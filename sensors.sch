@@ -207,46 +207,44 @@ Text HLabel 5650 6100 2    50   Input ~ 0
 $Comp
 L INA126U:INA126U U4
 U 1 1 5EED8A04
-P 8500 1900
-F 0 "U4" H 8500 2788 60  0000 C CNN
-F 1 "INA126U" H 8500 2682 60  0000 C CNN
-F 2 "footprints:INA126U" H 8500 1840 60  0001 C CNN
-F 3 "" H 8500 1900 60  0000 C CNN
-	1    8500 1900
+P 7800 1750
+F 0 "U4" H 7800 2638 60  0000 C CNN
+F 1 "INA126U" H 7800 2532 60  0000 C CNN
+F 2 "footprints:INA126U" H 7800 1690 60  0001 C CNN
+F 3 "" H 7800 1750 60  0000 C CNN
+	1    7800 1750
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 1400 0    50   Input ~ 0
+Text GLabel 7100 1250 0    50   Input ~ 0
 +EXC
-Text HLabel 9200 2100 2    50   Input ~ 0
+Text HLabel 8500 1950 2    50   Input ~ 0
 GND
-Text HLabel 9200 2400 2    50   Input ~ 0
+Text HLabel 8500 2250 2    50   Input ~ 0
 GND
 $Comp
 L Device:R_US RG1
 U 1 1 5EEEE283
-P 7550 2000
-F 0 "RG1" H 7618 2046 50  0000 L CNN
-F 1 "R_US" H 7618 1955 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7590 1990 50  0001 C CNN
-F 3 "~" H 7550 2000 50  0001 C CNN
-	1    7550 2000
+P 6850 1850
+F 0 "RG1" H 6918 1896 50  0000 L CNN
+F 1 "R_US" H 6918 1805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 6890 1840 50  0001 C CNN
+F 3 "~" H 6850 1850 50  0001 C CNN
+	1    6850 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 1800 7550 1800
+	7100 1650 6850 1650
 Wire Wire Line
-	7550 1800 7550 1850
+	6850 1650 6850 1700
 Wire Wire Line
-	7550 2150 7550 2200
+	6850 2000 6850 2050
 Wire Wire Line
-	7550 2200 7800 2200
-Text Notes 7400 2050 2    50   ~ 0
+	6850 2050 7100 2050
+Text Notes 6700 1900 2    50   ~ 0
 Gain =\n5 + 80K/RG
-Text GLabel 9200 1600 2    50   Input ~ 0
+Text GLabel 8500 1450 2    50   Input ~ 0
 LC
-Text GLabel 7800 1600 0    50   Input ~ 0
-LC+
-Text GLabel 7800 2400 0    50   Input ~ 0
+Text GLabel 5450 2250 0    50   Input ~ 0
 LC-
 Text GLabel 10000 1250 0    50   Input ~ 0
 LC+
@@ -286,4 +284,88 @@ Text GLabel 10000 1050 0    50   Input ~ 0
 +EXC
 Text GLabel 10000 1350 0    50   Input ~ 0
 GND
+$Comp
+L Device:C C19
+U 1 1 5EDBC2A8
+P 5500 850
+F 0 "C19" H 5615 896 50  0000 L CNN
+F 1 "0.1uF" H 5615 805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5538 700 50  0001 C CNN
+F 3 "~" H 5500 850 50  0001 C CNN
+F 4 "ceramic" H 5500 850 50  0001 C CNN "dielectric"
+	1    5500 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 700  0    50   Input ~ 0
++EXC
+Text HLabel 5500 1000 0    50   Input ~ 0
+GND
+$Comp
+L Device:R_US R12
+U 1 1 5EDB4E17
+P 5750 2250
+F 0 "R12" V 5545 2250 50  0000 C CNN
+F 1 "R_US" V 5636 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5790 2240 50  0001 C CNN
+F 3 "~" H 5750 2250 50  0001 C CNN
+	1    5750 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5EDB5BF7
+P 6100 2400
+F 0 "C21" H 6215 2446 50  0000 L CNN
+F 1 "C" H 6215 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6138 2250 50  0001 C CNN
+F 3 "~" H 6100 2400 50  0001 C CNN
+	1    6100 2400
+	1    0    0    -1  
+$EndComp
+Text HLabel 6100 2550 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5450 2250 5600 2250
+Wire Wire Line
+	5900 2250 6100 2250
+Connection ~ 6100 2250
+Text GLabel 5450 1450 0    50   Input ~ 0
+LC+
+$Comp
+L Device:R_US R11
+U 1 1 5EDBBFC4
+P 5750 1450
+F 0 "R11" V 5545 1450 50  0000 C CNN
+F 1 "R_US" V 5636 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5790 1440 50  0001 C CNN
+F 3 "~" H 5750 1450 50  0001 C CNN
+	1    5750 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 5EDBBFCA
+P 6100 1600
+F 0 "C20" H 6215 1646 50  0000 L CNN
+F 1 "C" H 6215 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6138 1450 50  0001 C CNN
+F 3 "~" H 6100 1600 50  0001 C CNN
+	1    6100 1600
+	1    0    0    -1  
+$EndComp
+Text HLabel 6100 1750 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5450 1450 5600 1450
+Wire Wire Line
+	5900 1450 6100 1450
+Connection ~ 6100 1450
+Wire Wire Line
+	6100 1450 7100 1450
+Wire Wire Line
+	6100 2250 7100 2250
+Text Label 6100 1450 0    50   ~ 0
+LC+_Filter
+Text Label 6100 2250 0    50   ~ 0
+LC-_Filter
 $EndSCHEMATC
