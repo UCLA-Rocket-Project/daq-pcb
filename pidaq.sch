@@ -53,27 +53,6 @@ Wire Wire Line
 Wire Wire Line
 	1250 2100 1250 2150
 Connection ~ 1250 2150
-$Comp
-L Connector:Conn_01x08_Female J6
-U 1 1 5F088E4C
-P 9350 2500
-F 0 "J6" H 9378 2476 50  0000 L CNN
-F 1 "Conn_01x08_Female" H 9378 2385 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9350 2500 50  0001 C CNN
-F 3 "~" H 9350 2500 50  0001 C CNN
-	1    9350 2500
-	1    0    0    -1  
-$EndComp
-Text GLabel 9150 2200 0    50   Input ~ 0
-~SEN
-Text GLabel 9150 2500 0    50   Input ~ 0
-IRQ
-Text GLabel 9150 2600 0    50   Input ~ 0
-GND
-Text GLabel 9150 2800 0    50   Input ~ 0
-SCLK
-Text GLabel 9150 2700 0    50   Input ~ 0
-MOSI
 Text GLabel 6750 2850 0    50   Input ~ 0
 MISO
 Text Notes 7450 7550 0    100  ~ 0
@@ -116,8 +95,6 @@ Text Notes 8300 1850 2    50   ~ 0
 All DAQ input pins have V_high=2.5V\nShould be good for 3.3 and 5V logic\n\nMISO is level shifted to VDOUT in case your\nmicrocontroller is not 5V input tolerant (Raspberry PI)
 Text Label 8350 2800 0    50   ~ 0
 MISO_SAFE
-Text GLabel 9150 2300 0    50   Input ~ 0
-~TC
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5EDC0B75
@@ -234,12 +211,35 @@ Text GLabel 4600 4700 2    50   Input ~ 0
 ~TC
 Text GLabel 4600 4850 2    50   Input ~ 0
 ~RST
-Text GLabel 9150 2400 0    50   Input ~ 0
-~RST
 Wire Wire Line
 	8250 2800 8800 2800
+Text GLabel 9200 2350 0    50   Input ~ 0
+MOSI
+Text GLabel 9200 2550 0    50   Input ~ 0
+SCLK
+Text GLabel 9200 2650 0    50   Input ~ 0
+GND
+Text GLabel 9700 2650 2    50   Input ~ 0
+~TC
+Text GLabel 9700 2550 2    50   Input ~ 0
+~SEN
+Text GLabel 9700 2450 2    50   Input ~ 0
+GPIO_25
+Text GLabel 9700 2350 2    50   Input ~ 0
+GND
 Wire Wire Line
-	8800 2800 8800 2900
+	8800 2800 8800 2450
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J6
+U 1 1 5EE81435
+P 9500 2450
+F 0 "J6" H 9550 2767 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 9550 2676 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 9500 2450 50  0001 C CNN
+F 3 "~" H 9500 2450 50  0001 C CNN
+	1    9500 2450
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	8800 2900 9150 2900
+	8800 2450 9200 2450
 $EndSCHEMATC
