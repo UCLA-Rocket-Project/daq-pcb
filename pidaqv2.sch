@@ -244,7 +244,7 @@ U 1 1 5F373E0E
 P 7850 1700
 F 0 "U1" H 9250 2087 60  0000 C CNN
 F 1 "INA2126E_250" H 9250 1981 60  0000 C CNN
-F 2 "DBQ16" H 9250 1940 60  0001 C CNN
+F 2 "footprints:INA2126E&slash_250" H 9250 1940 60  0001 C CNN
 F 3 "" H 7850 1700 60  0000 C CNN
 	1    7850 1700
 	1    0    0    -1  
@@ -278,7 +278,7 @@ U 1 1 5F37EE28
 P 2950 6600
 F 0 "MK1" H 3050 6649 50  0000 L CNN
 F 1 "MountingHole_Pad" H 3050 6558 50  0000 L CNN
-F 2 "" H 2950 6600 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 2950 6600 50  0001 C CNN
 F 3 "~" H 2950 6600 50  0001 C CNN
 	1    2950 6600
 	1    0    0    -1  
@@ -289,7 +289,7 @@ U 1 1 5F38064E
 P 3250 6600
 F 0 "MK2" H 3350 6649 50  0000 L CNN
 F 1 "MountingHole_Pad" H 3350 6558 50  0000 L CNN
-F 2 "" H 3250 6600 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 3250 6600 50  0001 C CNN
 F 3 "~" H 3250 6600 50  0001 C CNN
 	1    3250 6600
 	1    0    0    -1  
@@ -300,43 +300,9 @@ U 1 1 5F381F80
 P 2950 6900
 F 0 "MK3" H 3050 6949 50  0000 L CNN
 F 1 "MountingHole_Pad" H 3050 6858 50  0000 L CNN
-F 2 "" H 2950 6900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad" H 2950 6900 50  0001 C CNN
 F 3 "~" H 2950 6900 50  0001 C CNN
 	1    2950 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad MK4
-U 1 1 5F38349B
-P 3250 6900
-F 0 "MK4" H 3350 6949 50  0000 L CNN
-F 1 "MountingHole_Pad" H 3350 6858 50  0000 L CNN
-F 2 "" H 3250 6900 50  0001 C CNN
-F 3 "~" H 3250 6900 50  0001 C CNN
-	1    3250 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 6700 3100 6700
-Wire Wire Line
-	3250 7000 3100 7000
-Wire Wire Line
-	3100 6700 3100 7000
-Connection ~ 3100 6700
-Wire Wire Line
-	3100 6700 3250 6700
-Connection ~ 3100 7000
-Wire Wire Line
-	3100 7000 2950 7000
-$Comp
-L power:GNDPWR #PWR0101
-U 1 1 5F39D755
-P 3100 7000
-F 0 "#PWR0101" H 3100 6800 50  0001 C CNN
-F 1 "GNDPWR" H 3104 6846 50  0000 C CNN
-F 2 "" H 3100 6950 50  0001 C CNN
-F 3 "" H 3100 6950 50  0001 C CNN
-	1    3100 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -435,8 +401,6 @@ Wire Wire Line
 	7850 2100 7450 2100
 Wire Wire Line
 	7450 2100 7450 1850
-Text GLabel 7450 1850 0    50   Input ~ 0
-+2.5V
 Wire Wire Line
 	10650 2100 11050 2100
 Wire Wire Line
@@ -445,15 +409,11 @@ Text GLabel 11050 1850 2    50   Input ~ 0
 +2.5V
 Wire Wire Line
 	5850 3200 6050 3200
-Text GLabel 6100 3200 2    50   Input ~ 0
+Text GLabel 6050 3200 2    50   Input ~ 0
 +2.5V
-Wire Wire Line
-	5850 2500 6050 2500
-Wire Wire Line
-	5850 2600 6050 2600
-Text Label 6050 2500 0    50   ~ 0
+Text Label 6050 2900 0    50   ~ 0
 LC0
-Text Label 6050 2600 0    50   ~ 0
+Text Label 6050 3000 0    50   ~ 0
 LC1
 $Comp
 L Connector:Screw_Terminal_01x06 JTC-1
@@ -461,7 +421,7 @@ U 1 1 5F3F5DB3
 P 6400 3600
 F 0 "JTC-1" H 6480 3592 50  0000 L CNN
 F 1 "Screw_Terminal_01x06" H 6480 3501 50  0000 L CNN
-F 2 "" H 6400 3600 50  0001 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-6_1x06_P2.54mm_Horizontal" H 6400 3600 50  0001 C CNN
 F 3 "~" H 6400 3600 50  0001 C CNN
 	1    6400 3600
 	1    0    0    -1  
@@ -470,9 +430,6 @@ Wire Wire Line
 	6050 3200 6050 3400
 Wire Wire Line
 	6050 3400 6200 3400
-Connection ~ 6050 3200
-Wire Wire Line
-	6050 3200 6100 3200
 Wire Wire Line
 	6200 3400 6200 3500
 Connection ~ 6200 3400
@@ -494,7 +451,7 @@ U 1 1 5F3FED61
 P 5800 3550
 F 0 "C1" H 5892 3596 50  0000 L CNN
 F 1 "0.1uF" H 5892 3505 50  0000 L CNN
-F 2 "" H 5800 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 3550 50  0001 C CNN
 F 3 "~" H 5800 3550 50  0001 C CNN
 	1    5800 3550
 	1    0    0    -1  
@@ -515,53 +472,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 3400 5800 3450
 Connection ~ 6050 3400
-$Comp
-L Connector:Screw_Terminal_01x10 JAIN1
-U 1 1 5F40F7CE
-P 6900 2300
-F 0 "JAIN1" H 6980 2292 50  0000 L CNN
-F 1 "Screw_Terminal_01x10" H 6980 2201 50  0000 L CNN
-F 2 "" H 6900 2300 50  0001 C CNN
-F 3 "~" H 6900 2300 50  0001 C CNN
-	1    6900 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 2700 6300 2700
-Wire Wire Line
-	6300 2700 6300 2500
-Wire Wire Line
-	5850 2800 6350 2800
-Wire Wire Line
-	6350 2800 6350 2600
-Wire Wire Line
-	5850 2900 6400 2900
-Wire Wire Line
-	6400 2900 6400 2700
-Wire Wire Line
-	6400 2700 6700 2700
-Wire Wire Line
-	5850 3000 6450 3000
-Wire Wire Line
-	6450 3000 6450 2800
-Wire Wire Line
-	6450 2800 6700 2800
-Wire Wire Line
-	6350 2600 6700 2600
-Wire Wire Line
-	6300 2500 6700 2500
-Wire Wire Line
-	5850 2400 6700 2400
-Wire Wire Line
-	5850 2300 6700 2300
-Wire Wire Line
-	5850 2200 6700 2200
-Wire Wire Line
-	5850 2100 6700 2100
-Wire Wire Line
-	5850 2000 6700 2000
-Wire Wire Line
-	5850 1900 6700 1900
 Wire Wire Line
 	8900 3050 8750 3050
 Wire Wire Line
@@ -578,24 +488,24 @@ Wire Wire Line
 	10650 1700 10650 1600
 Wire Wire Line
 	10850 1800 10850 1600
-Text Label 7850 1600 0    50   ~ 0
-LC0-
-Text Label 7650 1600 0    50   ~ 0
-LC0+
-Text Label 10650 1600 0    50   ~ 0
-LC1-
 Text Label 10850 1600 0    50   ~ 0
+LC0-
+Text Label 10650 1600 0    50   ~ 0
+LC0+
+Text Label 7850 1600 0    50   ~ 0
+LC1-
+Text Label 7650 1600 0    50   ~ 0
 LC1+
 $Comp
 L Connector:Screw_Terminal_01x06 JLC1
 U 1 1 5F4741D0
-P 9100 3150
-F 0 "JLC1" H 9180 3142 50  0000 L CNN
-F 1 "Screw_Terminal_01x06" H 9180 3051 50  0000 L CNN
-F 2 "" H 9100 3150 50  0001 C CNN
-F 3 "~" H 9100 3150 50  0001 C CNN
-	1    9100 3150
-	1    0    0    -1  
+P 9100 3250
+F 0 "JLC1" H 9180 3242 50  0000 L CNN
+F 1 "Screw_Terminal_01x06" H 9180 3151 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-6_1x06_P2.54mm_Horizontal" H 9100 3250 50  0001 C CNN
+F 3 "~" H 9100 3250 50  0001 C CNN
+	1    9100 3250
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8900 3250 8750 3250
@@ -632,7 +542,7 @@ U 1 1 5F48AA29
 P 2650 4700
 F 0 "JAIN0" H 2730 4692 50  0000 L CNN
 F 1 "Screw_Terminal_01x12" H 2730 4601 50  0000 L CNN
-F 2 "" H 2650 4700 50  0001 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_1-282834-2_1x12_P2.54mm_Horizontal" H 2650 4700 50  0001 C CNN
 F 3 "~" H 2650 4700 50  0001 C CNN
 	1    2650 4700
 	1    0    0    -1  
@@ -643,4 +553,62 @@ Text Notes 5750 4100 0    50   ~ 0
 Tie negative inputs of thermocouples to +2.5V\n
 Text Notes 5050 1250 0    50   ~ 0
 This ADC is set up for use of the internal PGA (GAINS).\nAll inputs should be in the range of 2.5V +/- 2V\n\nExcel calculator: https://www.ti.com/tool/ADS124S08-EXCEL-CALC-TOOL\n
+Wire Wire Line
+	5850 2500 6700 2500
+Wire Wire Line
+	5850 2600 6700 2600
+Wire Wire Line
+	5850 2800 6700 2800
+Wire Wire Line
+	5850 2700 6700 2700
+Wire Wire Line
+	5850 1900 6700 1900
+Wire Wire Line
+	5850 2000 6700 2000
+Wire Wire Line
+	5850 2100 6700 2100
+Wire Wire Line
+	5850 2200 6700 2200
+Wire Wire Line
+	5850 2300 6700 2300
+Wire Wire Line
+	5850 2400 6700 2400
+$Comp
+L Connector:Screw_Terminal_01x10 JAIN1
+U 1 1 5F40F7CE
+P 6900 2300
+F 0 "JAIN1" H 6980 2292 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" H 6980 2201 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_1-282834-0_1x10_P2.54mm_Horizontal" H 6900 2300 50  0001 C CNN
+F 3 "~" H 6900 2300 50  0001 C CNN
+	1    6900 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 1850 0    50   Input ~ 0
++2.5V
+Wire Wire Line
+	5850 2900 6050 2900
+Wire Wire Line
+	5850 3000 6050 3000
+Wire Wire Line
+	3100 7000 2950 7000
+Wire Wire Line
+	3100 6700 3250 6700
+Wire Wire Line
+	2950 6700 3100 6700
+Connection ~ 3100 6700
+Wire Wire Line
+	3100 6700 3100 7000
+Connection ~ 3100 7000
+$Comp
+L power:GNDPWR #PWR0101
+U 1 1 5F39D755
+P 3100 7000
+F 0 "#PWR0101" H 3100 6800 50  0001 C CNN
+F 1 "GNDPWR" H 3104 6846 50  0000 C CNN
+F 2 "" H 3100 6950 50  0001 C CNN
+F 3 "" H 3100 6950 50  0001 C CNN
+	1    3100 7000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
