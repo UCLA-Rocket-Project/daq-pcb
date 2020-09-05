@@ -21,6 +21,7 @@ F 0 "J101" H 1450 2267 50  0000 C CNN
 F 1 "Conn_02x04_Odd_Even" H 1450 2176 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 1400 1950 50  0001 C CNN
 F 3 "~" H 1400 1950 50  0001 C CNN
+F 4 "DNP" H 1400 1950 50  0001 C CNN "DNP?"
 	1    1400 1950
 	-1   0    0    -1  
 $EndComp
@@ -96,6 +97,7 @@ F 0 "J103" H 2018 3325 50  0000 C CNN
 F 1 "Screw_Terminal_01x10" H 2018 3416 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-10-5.08_1x10_P5.08mm_Horizontal" H 2100 4050 50  0001 C CNN
 F 3 "~" H 2100 4050 50  0001 C CNN
+F 4 "DNP" H 2100 4050 50  0001 C CNN "DNP?"
 	1    2100 4050
 	1    0    0    1   
 $EndComp
@@ -238,6 +240,7 @@ F 0 "J105" H 8430 5442 50  0000 L CNN
 F 1 "Screw_Terminal_01x06" H 8430 5351 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-6-5.08_1x06_P5.08mm_Horizontal" H 8350 5450 50  0001 C CNN
 F 3 "~" H 8350 5450 50  0001 C CNN
+F 4 "DNP" H 8350 5450 50  0001 C CNN "DNP?"
 	1    8350 5450
 	1    0    0    -1  
 $EndComp
@@ -264,7 +267,7 @@ F 3 "" H 7700 5400 50  0001 C CNN
 	1    7700 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 1900 4650 2    50   Output ~ 0
+Text GLabel 2250 4500 2    50   Output ~ 0
 2.5V
 Text GLabel 1900 6750 2    50   Output ~ 0
 TC-
@@ -378,6 +381,7 @@ F 0 "J104" H 3480 5542 50  0000 L CNN
 F 1 "Screw_Terminal_01x08" H 3480 5451 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal" H 3400 5550 50  0001 C CNN
 F 3 "~" H 3400 5550 50  0001 C CNN
+F 4 "DNP" H 3400 5550 50  0001 C CNN "DNP?"
 	1    3400 5550
 	1    0    0    -1  
 $EndComp
@@ -389,6 +393,7 @@ F 0 "J106" H 3480 6542 50  0000 L CNN
 F 1 "Screw_Terminal_01x08" H 3480 6451 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal" H 3400 6550 50  0001 C CNN
 F 3 "~" H 3400 6550 50  0001 C CNN
+F 4 "DNP" H 3400 6550 50  0001 C CNN "DNP?"
 	1    3400 6550
 	1    0    0    -1  
 $EndComp
@@ -430,6 +435,7 @@ F 0 "J102" H 1530 1242 50  0000 L CNN
 F 1 "Conn_01x03" H 1530 1151 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1450 1200 50  0001 C CNN
 F 3 "~" H 1450 1200 50  0001 C CNN
+F 4 "DNP" H 1450 1200 50  0001 C CNN "DNP?"
 	1    1450 1200
 	1    0    0    -1  
 $EndComp
@@ -495,18 +501,38 @@ F 3 "~" H 3950 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J107
-U 1 1 5F4B9AB1
-P 2250 4850
-F 0 "J107" H 2278 4876 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 2278 4785 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2250 4850 50  0001 C CNN
-F 3 "~" H 2250 4850 50  0001 C CNN
-	1    2250 4850
+L Connector:Conn_01x03_Male J107
+U 1 1 5F5328B6
+P 2800 4750
+F 0 "J107" H 2908 5031 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2908 4940 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2800 4750 50  0001 C CNN
+F 3 "~" H 2800 4750 50  0001 C CNN
+	1    2800 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5F539769
+P 2500 4850
+F 0 "#PWR0114" H 2500 4600 50  0001 C CNN
+F 1 "GND" H 2505 4677 50  0000 C CNN
+F 2 "" H 2500 4850 50  0001 C CNN
+F 3 "" H 2500 4850 50  0001 C CNN
+	1    2500 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 4750 2050 4750
+	2500 4850 2600 4850
 Wire Wire Line
-	2050 4750 2050 4850
+	1900 4650 2200 4650
+Wire Wire Line
+	2250 4500 2200 4500
+Wire Wire Line
+	2200 4500 2200 4650
+Connection ~ 2200 4650
+Wire Wire Line
+	2200 4650 2600 4650
+Wire Wire Line
+	1900 4750 2600 4750
 $EndSCHEMATC
