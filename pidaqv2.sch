@@ -120,17 +120,6 @@ F 3 "~" H 9950 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H101
-U 1 1 5F4F27FC
-P 9100 5700
-F 0 "H101" H 9200 5746 50  0000 L CNN
-F 1 "MountingHole" H 9200 5655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 9100 5700 50  0001 C CNN
-F 3 "~" H 9100 5700 50  0001 C CNN
-	1    9100 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H102
 U 1 1 5F4F2802
 P 9100 6050
@@ -155,8 +144,8 @@ F7 "B" O R 2500 3300 50
 F8 "A" O R 2500 3200 50 
 F9 "VREF" I R 2500 3700 50 
 $EndSheet
-Text Notes 3000 3550 0    50   ~ 0
-Load Cell voltages go up to 10V\nInstrumentation Amplifier to convert it\nto  2.5V +/- delta
+Text Notes 2800 3500 0    50   ~ 0
+The ADC wants voltages centered\nat 2.5V
 $Comp
 L Connector:Screw_Terminal_01x11 J101
 U 1 1 5F6ADD6F
@@ -187,17 +176,6 @@ F 3 "" H 2650 7350 50  0001 C CNN
 $EndComp
 Text Notes 2450 7650 2    50   ~ 0
 Jumper to optionally\ntie AINCOM to a fixed voltage
-$Comp
-L Connector:Screw_Terminal_01x08 J104
-U 1 1 5F6B71F7
-P 1550 1950
-F 0 "J104" H 1468 2467 50  0000 C CNN
-F 1 "Screw_Terminal_01x08" H 1468 2376 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal" H 1550 1950 50  0001 C CNN
-F 3 "~" H 1550 1950 50  0001 C CNN
-	1    1550 1950
-	-1   0    0    -1  
-$EndComp
 $Comp
 L power:GNDREF #PWR0114
 U 1 1 5F6C0CC4
@@ -241,49 +219,10 @@ Wire Wire Line
 	2950 5450 2250 5450
 Wire Wire Line
 	2500 3200 2600 3200
-Text Notes 1800 2600 2    50   ~ 0
+Text Notes 2950 2500 2    50   ~ 0
 AINCOM will \nlevel-shift the thermocouples\n
-Wire Wire Line
-	3350 2450 2950 2450
-Wire Wire Line
-	2950 2450 2950 3700
-Wire Wire Line
-	2950 3700 2500 3700
-Wire Wire Line
-	3350 2050 2050 2050
-Wire Wire Line
-	3350 1950 2100 1950
-$Comp
-L Connector:Screw_Terminal_01x04 J105
-U 1 1 5F75BDB3
-P 2600 1050
-F 0 "J105" V 2564 762 50  0000 R CNN
-F 1 "Screw_Terminal_01x04" V 2473 762 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal" H 2600 1050 50  0001 C CNN
-F 3 "~" H 2600 1050 50  0001 C CNN
-	1    2600 1050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3350 1550 2800 1550
-Wire Wire Line
-	2800 1550 2800 1250
-Wire Wire Line
-	2700 1250 2700 1650
-Wire Wire Line
-	2700 1650 3350 1650
-Wire Wire Line
-	3350 1750 2600 1750
-Wire Wire Line
-	2600 1750 2600 1250
-Wire Wire Line
-	2500 1250 2500 1850
-Wire Wire Line
-	2500 1850 3350 1850
-Text Notes 1350 2050 2    50   ~ 0
+Text Notes 1200 2150 2    50   ~ 0
 Thermocouple\nterminals
-Text Notes 2850 900  2    50   ~ 0
-General-purpose\nTerminals
 Text Notes 1850 5850 2    50   ~ 0
 General-Purpose\nterminals
 Text Notes 7850 6850 2    50   ~ 0
@@ -293,49 +232,17 @@ Specialty Sensors\n(Thermocouples, Load Cells)
 Wire Notes Line
 	5800 500  5800 7800
 Text Notes 5650 7700 2    50   ~ 0
-General-Purpose Sensors\n(Pressure Transducers, Hall Effect sensors
+General-Purpose Sensors\n(Pressure Transducers, Hall Effect sensors)
 Wire Notes Line
 	500  4700 11200 4700
 Text Notes 11050 4550 2    50   ~ 0
 Microcontroller\nInterfaces
-Wire Wire Line
-	1750 2350 1900 2350
-Wire Wire Line
-	1750 2150 1900 2150
-Wire Wire Line
-	1900 2150 1900 2350
-Wire Wire Line
-	1750 1950 1900 1950
-Wire Wire Line
-	1900 1950 1900 2150
-Connection ~ 1900 2150
-Wire Wire Line
-	1750 1750 1900 1750
-Wire Wire Line
-	1900 1750 1900 1950
-Connection ~ 1900 1950
-Wire Wire Line
-	1750 1650 2100 1650
-Wire Wire Line
-	2100 1650 2100 1950
-Wire Wire Line
-	1750 1850 2050 1850
-Wire Wire Line
-	2050 1850 2050 2050
-Wire Wire Line
-	1750 2050 2000 2050
-Wire Wire Line
-	2000 2050 2000 2150
-Wire Wire Line
-	2000 2150 3350 2150
-Wire Wire Line
-	1750 2250 3350 2250
 Text Label 2600 3200 0    50   ~ 0
 A
 Text Label 2600 3300 0    50   ~ 0
 B
 Wire Wire Line
-	2250 6550 2950 6550
+	2250 6550 2350 6550
 $Comp
 L Connector:Conn_01x02_Male J103
 U 1 1 5F714DF2
@@ -467,11 +374,6 @@ Wire Wire Line
 Text Notes 9100 1250 0    50   ~ 0
 We plan to use a Seeed Arch Pro:\nhttps://wiki.seeedstudio.com/Arch_Pro/
 Wire Wire Line
-	3350 2550 1900 2550
-Wire Wire Line
-	1900 2550 1900 2350
-Connection ~ 1900 2350
-Wire Wire Line
 	2500 3300 2600 3300
 Text Label 3150 1350 0    50   ~ 0
 A
@@ -481,4 +383,102 @@ Wire Wire Line
 	3150 1350 3350 1350
 Wire Wire Line
 	3150 1450 3350 1450
+Text GLabel 2350 6700 0    50   Input ~ 0
+2.5V
+Wire Wire Line
+	2350 6550 2350 6700
+Connection ~ 2350 6550
+Wire Wire Line
+	2350 6550 2950 6550
+Text GLabel 2500 3700 2    50   Input ~ 0
+2.5V
+Wire Wire Line
+	3350 1550 2950 1550
+Wire Wire Line
+	2950 1550 2950 1000
+Wire Wire Line
+	3350 1650 2900 1650
+Wire Wire Line
+	2900 1650 2900 1100
+Wire Wire Line
+	3350 1750 2850 1750
+Wire Wire Line
+	3350 1850 2800 1850
+Wire Wire Line
+	3350 1950 2750 1950
+Wire Wire Line
+	2750 1950 2750 1650
+Wire Wire Line
+	2750 1650 1750 1650
+Wire Wire Line
+	3350 2050 2700 2050
+Wire Wire Line
+	2700 2050 2700 1850
+Wire Wire Line
+	2700 1850 1750 1850
+Wire Wire Line
+	3350 2150 2650 2150
+Wire Wire Line
+	2650 2150 2650 2050
+Wire Wire Line
+	2650 2050 1750 2050
+Wire Wire Line
+	3350 2250 1750 2250
+Wire Wire Line
+	1400 2550 1400 2350
+Wire Wire Line
+	1400 2350 1750 2350
+Wire Wire Line
+	1400 2550 3350 2550
+Wire Wire Line
+	1400 2350 1400 2150
+Connection ~ 1400 2350
+Wire Wire Line
+	1750 2150 1400 2150
+Connection ~ 1400 2150
+Wire Wire Line
+	1400 2150 1400 1950
+Wire Wire Line
+	1750 1950 1400 1950
+Connection ~ 1400 1950
+Wire Wire Line
+	1400 1950 1400 1750
+Wire Wire Line
+	1750 1750 1400 1750
+$Comp
+L Connector:Screw_Terminal_01x08 J105
+U 1 1 5F6FB13F
+P 1550 1950
+F 0 "J105" H 1468 2467 50  0000 C CNN
+F 1 "Screw_Terminal_01x08" H 1468 2376 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-8_1x08_P2.54mm_Horizontal" H 1550 1950 50  0001 C CNN
+F 3 "~" H 1550 1950 50  0001 C CNN
+	1    1550 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J104
+U 1 1 5F7080E0
+P 1550 1100
+F 0 "J104" H 1468 1417 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 1468 1326 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 1550 1100 50  0001 C CNN
+F 3 "~" H 1550 1100 50  0001 C CNN
+	1    1550 1100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1300 1750 1300
+Wire Wire Line
+	2800 1300 2800 1850
+Wire Wire Line
+	1750 1200 2850 1200
+Wire Wire Line
+	2850 1200 2850 1750
+Wire Wire Line
+	1750 1100 2900 1100
+Wire Wire Line
+	1750 1000 2950 1000
+Text Notes 1150 1200 2    50   ~ 0
+Extra terminals
 $EndSCHEMATC
