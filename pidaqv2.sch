@@ -76,27 +76,25 @@ $EndSheet
 $Comp
 L power:GND #PWR0140
 U 1 1 5F5461E4
-P 9350 6300
-F 0 "#PWR0140" H 9350 6050 50  0001 C CNN
-F 1 "GND" H 9355 6127 50  0000 C CNN
-F 2 "" H 9350 6300 50  0001 C CNN
-F 3 "" H 9350 6300 50  0001 C CNN
-	1    9350 6300
+P 8050 6150
+F 0 "#PWR0140" H 8050 5900 50  0001 C CNN
+F 1 "GND" H 8055 5977 50  0000 C CNN
+F 2 "" H 8050 6150 50  0001 C CNN
+F 3 "" H 8050 6150 50  0001 C CNN
+	1    8050 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDREF #PWR0141
 U 1 1 5F547373
-P 9750 6300
-F 0 "#PWR0141" H 9750 6050 50  0001 C CNN
-F 1 "GNDREF" H 9755 6127 50  0000 C CNN
-F 2 "" H 9750 6300 50  0001 C CNN
-F 3 "" H 9750 6300 50  0001 C CNN
-	1    9750 6300
+P 8450 6150
+F 0 "#PWR0141" H 8450 5900 50  0001 C CNN
+F 1 "GNDREF" H 8455 5977 50  0000 C CNN
+F 2 "" H 8450 6150 50  0001 C CNN
+F 3 "" H 8450 6150 50  0001 C CNN
+	1    8450 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9350 6300 9750 6300
 $Comp
 L Mechanical:MountingHole H103
 U 1 1 5F4EFFF4
@@ -146,17 +144,6 @@ F9 "VREF" I R 2500 3700 50
 $EndSheet
 Text Notes 2800 3500 0    50   ~ 0
 The ADC wants voltages centered\nat 2.5V
-$Comp
-L Connector:Screw_Terminal_01x11 J101
-U 1 1 5F6ADD6F
-P 2050 5950
-F 0 "J101" H 1968 6667 50  0000 C CNN
-F 1 "Screw_Terminal_01x11" H 1968 6576 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-11-5.08_1x11_P5.08mm_Horizontal" H 2050 5950 50  0001 C CNN
-F 3 "~" H 2050 5950 50  0001 C CNN
-	1    2050 5950
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2950 6650 2900 6650
 Wire Wire Line
@@ -196,8 +183,6 @@ Load Cell Terminals:\nRED/WHITE/BLACK/GREEN\nhttps://www.transducertechniques.co
 Wire Wire Line
 	1600 3600 1800 3600
 Wire Wire Line
-	2250 6550 2250 6450
-Wire Wire Line
 	2250 6350 2950 6350
 Wire Wire Line
 	2950 6250 2250 6250
@@ -223,7 +208,7 @@ Text Notes 2950 2500 2    50   ~ 0
 AINCOM will \nlevel-shift the thermocouples\n
 Text Notes 1200 2150 2    50   ~ 0
 Thermocouple\nterminals
-Text Notes 1850 5850 2    50   ~ 0
+Text Notes 2850 5300 2    50   ~ 0
 General-Purpose\nterminals
 Text Notes 7850 6850 2    50   ~ 0
 UCLA Rocket Project
@@ -241,8 +226,6 @@ Text Label 2600 3200 0    50   ~ 0
 A
 Text Label 2600 3300 0    50   ~ 0
 B
-Wire Wire Line
-	2250 6550 2350 6550
 $Comp
 L Connector:Conn_01x02_Male J103
 U 1 1 5F714DF2
@@ -260,7 +243,7 @@ U 1 1 5F721BF5
 P 850 3350
 F 0 "J102" H 768 2825 50  0000 C CNN
 F 1 "Screw_Terminal_01x06" H 768 2916 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal" H 850 3350 50  0001 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-6_1x06_P2.54mm_Horizontal" H 850 3350 50  0001 C CNN
 F 3 "~" H 850 3350 50  0001 C CNN
 	1    850  3350
 	-1   0    0    1   
@@ -383,13 +366,6 @@ Wire Wire Line
 	3150 1350 3350 1350
 Wire Wire Line
 	3150 1450 3350 1450
-Text GLabel 2350 6700 0    50   Input ~ 0
-2.5V
-Wire Wire Line
-	2350 6550 2350 6700
-Connection ~ 2350 6550
-Wire Wire Line
-	2350 6550 2950 6550
 Text GLabel 2500 3700 2    50   Input ~ 0
 2.5V
 Wire Wire Line
@@ -481,4 +457,37 @@ Wire Wire Line
 	1750 1000 2950 1000
 Text Notes 1150 1200 2    50   ~ 0
 Extra terminals
+$Comp
+L Connector:Screw_Terminal_01x10 J101
+U 1 1 5F785590
+P 2050 5850
+F 0 "J101" H 1968 6467 50  0000 C CNN
+F 1 "Screw_Terminal_01x10" H 1968 6376 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_1-282834-0_1x10_P2.54mm_Horizontal" H 2050 5850 50  0001 C CNN
+F 3 "~" H 2050 5850 50  0001 C CNN
+	1    2050 5850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6550 2850 6550
+NoConn ~ 2850 6550
+$Comp
+L Device:Net-Tie_2 NT?
+U 1 1 5F799F68
+P 8250 6100
+F 0 "NT?" H 8250 6281 50  0000 C CNN
+F 1 "Net-Tie_2" H 8250 6190 50  0000 C CNN
+F 2 "" H 8250 6100 50  0001 C CNN
+F 3 "~" H 8250 6100 50  0001 C CNN
+	1    8250 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 6150 8050 6100
+Wire Wire Line
+	8050 6100 8150 6100
+Wire Wire Line
+	8350 6100 8450 6100
+Wire Wire Line
+	8450 6100 8450 6150
 $EndSCHEMATC
