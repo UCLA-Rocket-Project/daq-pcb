@@ -347,21 +347,17 @@ Wire Wire Line
 Text GLabel 2500 3700 2    50   Input ~ 0
 2.5V
 Wire Wire Line
-	3350 1550 2950 1550
+	-1150 1000 -1150 450 
 Wire Wire Line
-	2950 1550 2950 1000
+	-750 1100 -1200 1100
 Wire Wire Line
-	3350 1650 2900 1650
+	-1200 1100 -1200 550 
 Wire Wire Line
-	2900 1650 2900 1100
-Wire Wire Line
-	3350 1750 2850 1750
-Wire Wire Line
-	3350 1850 2800 1850
+	-750 1200 -1250 1200
 Wire Wire Line
 	3350 1950 2750 1950
 Wire Wire Line
-	2750 1950 2750 1650
+	-1350 1600 -1350 1300
 Wire Wire Line
 	2750 1650 1750 1650
 Wire Wire Line
@@ -413,26 +409,18 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J104
 U 1 1 5F7080E0
-P 1550 1100
-F 0 "J104" H 1468 1417 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 1468 1326 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 1550 1100 50  0001 C CNN
-F 3 "~" H 1550 1100 50  0001 C CNN
-	1    1550 1100
+P 1500 1100
+F 0 "J104" H 1418 1417 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 1418 1326 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 1500 1100 50  0001 C CNN
+F 3 "~" H 1500 1100 50  0001 C CNN
+	1    1500 1100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 1300 1750 1300
+	-1300 750  -1300 1300
 Wire Wire Line
-	2800 1300 2800 1850
-Wire Wire Line
-	1750 1200 2850 1200
-Wire Wire Line
-	2850 1200 2850 1750
-Wire Wire Line
-	1750 1100 2900 1100
-Wire Wire Line
-	1750 1000 2950 1000
+	-1250 650  -1250 1200
 Text Notes 1150 1200 2    50   ~ 0
 Extra terminals
 $Comp
@@ -483,23 +471,38 @@ Wire Wire Line
 	1600 3200 1600 3150
 Wire Wire Line
 	1800 3200 1600 3200
-$Comp
-L Device:Net-Tie_2 NT?
-U 1 1 5F800E7F
-P 8250 6050
-F 0 "NT?" H 8250 6231 50  0000 C CNN
-F 1 "Net-Tie_2" H 8250 6140 50  0000 C CNN
-F 2 "" H 8250 6050 50  0001 C CNN
-F 3 "~" H 8250 6050 50  0001 C CNN
-	1    8250 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 6050 8150 6050
 Wire Wire Line
 	8050 6050 8050 6150
 Wire Wire Line
-	8350 6050 8450 6050
-Wire Wire Line
 	8450 6050 8450 6150
+Text GLabel 3350 2450 0    50   Output ~ 0
+2.5V
+Wire Wire Line
+	2750 1650 2750 1950
+Wire Wire Line
+	8050 6050 8450 6050
+Wire Wire Line
+	3350 1550 3000 1550
+Wire Wire Line
+	3000 1550 3000 1000
+Wire Wire Line
+	1700 1000 3000 1000
+Wire Wire Line
+	2950 1100 2950 1650
+Wire Wire Line
+	2950 1650 3350 1650
+Wire Wire Line
+	1700 1100 2950 1100
+Wire Wire Line
+	3350 1750 2900 1750
+Wire Wire Line
+	2900 1750 2900 1200
+Wire Wire Line
+	1700 1200 2900 1200
+Wire Wire Line
+	2850 1300 2850 1850
+Wire Wire Line
+	2850 1850 3350 1850
+Wire Wire Line
+	1700 1300 2850 1300
 $EndSCHEMATC
