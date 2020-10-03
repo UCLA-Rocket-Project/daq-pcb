@@ -105,7 +105,7 @@ AR Path="/5F4A8EC5/5F4B6004" Ref="C205"  Part="1"
 AR Path="/5F4D3EB7/5F4B6004" Ref="C305"  Part="1" 
 F 0 "C205" H 6215 1996 50  0000 L CNN
 F 1 "1uF" H 6215 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6138 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 1800 50  0001 C CNN
 F 3 "~" H 6100 1950 50  0001 C CNN
 	1    6100 1950
 	1    0    0    -1  
@@ -125,7 +125,7 @@ Text HLabel 5700 2400 2    50   Input ~ 0
 MOSI
 Text HLabel 5700 2600 2    50   Input ~ 0
 SCLK
-Text HLabel 7100 2800 2    50   Input ~ 0
+Text HLabel 5700 2800 2    50   Input ~ 0
 ~CS
 Text HLabel 5700 2000 2    50   Output ~ 0
 MISO
@@ -170,7 +170,7 @@ AR Path="/5F4D3EB7/5F4AAB9D" Ref="C301"  Part="1"
 AR Path="/5F4A8EC5/5F4AAB9D" Ref="C201"  Part="1" 
 F 0 "C201" H 3715 5596 50  0000 L CNN
 F 1 "4.7nF C0G" H 3715 5505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3638 5400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 5400 50  0001 C CNN
 F 3 "~" H 3600 5550 50  0001 C CNN
 	1    3600 5550
 	1    0    0    -1  
@@ -259,7 +259,7 @@ Text HLabel 5700 2400 2    50   Input ~ 0
 MOSI
 Text HLabel 5700 2600 2    50   Input ~ 0
 SCLK
-Text HLabel 7100 2800 2    50   Input ~ 0
+Text HLabel 5700 2800 2    50   Input ~ 0
 ~CS
 Text HLabel 5700 2000 2    50   Output ~ 0
 MISO
@@ -281,7 +281,7 @@ AR Path="/5F4A8EC5/5F4B7BDA" Ref="C202"  Part="1"
 AR Path="/5F4D3EB7/5F4B7BDA" Ref="C302"  Part="1" 
 F 0 "C202" H 3465 6096 50  0000 L CNN
 F 1 "1uF" H 3465 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3388 5900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3388 5900 50  0001 C CNN
 F 3 "~" H 3350 6050 50  0001 C CNN
 	1    3350 6050
 	1    0    0    -1  
@@ -302,7 +302,7 @@ AR Path="/5F4A8EC5/5F4CD7CF" Ref="C204"  Part="1"
 AR Path="/5F4D3EB7/5F4CD7CF" Ref="C304"  Part="1" 
 F 0 "C204" H 6165 5846 50  0000 L CNN
 F 1 "1uF" H 6165 5755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6088 5650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6088 5650 50  0001 C CNN
 F 3 "~" H 6050 5800 50  0001 C CNN
 	1    6050 5800
 	1    0    0    -1  
@@ -350,7 +350,7 @@ AR Path="/5F4D3EB7/5F4C2005" Ref="C306"  Part="1"
 AR Path="/5F4A8EC5/5F4C2005" Ref="C206"  Part="1" 
 F 0 "C206" H 3815 6096 50  0000 L CNN
 F 1 "10uF" H 3815 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 5900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3738 5900 50  0001 C CNN
 F 3 "~" H 3700 6050 50  0001 C CNN
 	1    3700 6050
 	1    0    0    -1  
@@ -384,7 +384,7 @@ AR Path="/5F4D3EB7/5F4B8109" Ref="C303"  Part="1"
 AR Path="/5F4A8EC5/5F4B8109" Ref="C203"  Part="1" 
 F 0 "C203" H 6065 3796 50  0000 L CNN
 F 1 "10uF" H 6065 3705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5988 3600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5988 3600 50  0001 C CNN
 F 3 "~" H 5950 3750 50  0001 C CNN
 	1    5950 3750
 	1    0    0    -1  
@@ -394,53 +394,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 3400 5950 3300
 Connection ~ 5950 3300
-$Comp
-L Device:R_US R201
-U 1 1 5F6B4ED7
-P 6900 2500
-AR Path="/5F4A8EC5/5F6B4ED7" Ref="R201"  Part="1" 
-AR Path="/5F4D3EB7/5F6B4ED7" Ref="R301"  Part="1" 
-F 0 "R201" H 6968 2546 50  0000 L CNN
-F 1 "4.7K" H 6968 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6940 2490 50  0001 C CNN
-F 3 "~" H 6900 2500 50  0001 C CNN
-	1    6900 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0104
-U 1 1 5F6B97FB
-P 6900 2350
-AR Path="/5F4A8EC5/5F6B97FB" Ref="#PWR0104"  Part="1" 
-AR Path="/5F4D3EB7/5F6B97FB" Ref="#PWR0128"  Part="1" 
-F 0 "#PWR0104" H 6900 2200 50  0001 C CNN
-F 1 "+3.3V" H 6915 2523 50  0000 C CNN
-F 2 "" H 6900 2350 50  0001 C CNN
-F 3 "" H 6900 2350 50  0001 C CNN
-	1    6900 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0130
-U 1 1 5F6B9801
-P 6900 2350
-AR Path="/5F4D3EB7/5F6B9801" Ref="#PWR0130"  Part="1" 
-AR Path="/5F4A8EC5/5F6B9801" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 6900 2200 50  0001 C CNN
-F 1 "+3.3V" H 6915 2523 50  0000 C CNN
-F 2 "" H 6900 2350 50  0001 C CNN
-F 3 "" H 6900 2350 50  0001 C CNN
-	1    6900 2350
-	1    0    0    -1  
-$EndComp
-Connection ~ 6900 2350
-Wire Wire Line
-	5700 2800 6900 2800
-Wire Wire Line
-	6900 2650 6900 2800
-Connection ~ 6900 2800
-Wire Wire Line
-	6900 2800 7100 2800
 NoConn ~ 3900 1600
 NoConn ~ 3900 1700
 NoConn ~ 3900 1800
@@ -449,4 +402,6 @@ Text Label 5750 5650 0    50   ~ 0
 DPWR
 Text Label 3450 5900 0    50   ~ 0
 APWR
+Text Notes 6250 2700 0    50   ~ 0
+Live dangerously,\nno pullup on ~CS
 $EndSCHEMATC

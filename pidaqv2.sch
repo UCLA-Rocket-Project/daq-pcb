@@ -133,10 +133,10 @@ S 1800 3000 700  1000
 U 5F6892C7
 F0 "amplifier" 50
 F1 "amplifier.sch" 50
-F2 "A+" I L 1800 3700 50 
-F3 "B+" I L 1800 3300 50 
-F4 "A-" I L 1800 3600 50 
-F5 "B-" I L 1800 3200 50 
+F2 "A+" I L 1800 3300 50 
+F3 "B+" I L 1800 3600 50 
+F4 "A-" I L 1800 3200 50 
+F5 "B-" I L 1800 3700 50 
 F6 "VEXC" I L 1800 3050 50 
 F7 "B" O R 2500 3300 50 
 F8 "A" O R 2500 3200 50 
@@ -174,10 +174,6 @@ F 3 "" H 1250 3850 50  0001 C CNN
 	1    1250 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 3200 1600 3200
-Wire Wire Line
-	1600 3200 1600 3150
 Text Notes 750  4600 0    50   ~ 0
 Load Cell Terminals:\nRED/WHITE/BLACK/GREEN\nhttps://www.transducertechniques.com/wiring-color-code.aspx
 Wire Wire Line
@@ -251,17 +247,9 @@ $EndComp
 Wire Wire Line
 	1050 3050 1800 3050
 Wire Wire Line
-	1050 3150 1600 3150
-Wire Wire Line
 	1050 3250 1250 3250
 Wire Wire Line
 	1250 3250 1250 3850
-Wire Wire Line
-	1050 3350 1600 3350
-Wire Wire Line
-	1600 3350 1600 3300
-Wire Wire Line
-	1600 3300 1800 3300
 Wire Wire Line
 	1050 3450 1600 3450
 Wire Wire Line
@@ -311,25 +299,15 @@ Wire Wire Line
 	8750 950  8550 950 
 Wire Wire Line
 	8550 950  8550 1300
-Wire Wire Line
-	8250 3400 8350 3400
-Wire Wire Line
-	8600 3400 8600 3550
-Connection ~ 8350 3400
-Wire Wire Line
-	8350 3400 8450 3400
-Connection ~ 8450 3400
-Wire Wire Line
-	8450 3400 8600 3400
 $Comp
 L power:GND #PWR0103
 U 1 1 5F6AA8DA
-P 8600 3550
-F 0 "#PWR0103" H 8600 3300 50  0001 C CNN
-F 1 "GND" H 8605 3377 50  0000 C CNN
-F 2 "" H 8600 3550 50  0001 C CNN
-F 3 "" H 8600 3550 50  0001 C CNN
-	1    8600 3550
+P 8200 3500
+F 0 "#PWR0103" H 8200 3250 50  0001 C CNN
+F 1 "GND" H 8205 3327 50  0000 C CNN
+F 2 "" H 8200 3500 50  0001 C CNN
+F 3 "" H 8200 3500 50  0001 C CNN
+	1    8200 3500
 	1    0    0    -1  
 $EndComp
 Text GLabel 7850 3000 0    50   Output ~ 0
@@ -338,9 +316,9 @@ Text GLabel 7850 2900 0    50   Input ~ 0
 MISO
 Text GLabel 7850 2800 0    50   Output ~ 0
 MOSI
-Text GLabel 7650 2650 0    50   Output ~ 0
-~CS0
 Text GLabel 7650 2500 0    50   Output ~ 0
+~CS0
+Text GLabel 7650 2650 0    50   Output ~ 0
 ~CS1
 Wire Wire Line
 	7850 2700 7700 2700
@@ -471,23 +449,57 @@ $EndComp
 Wire Wire Line
 	2950 6550 2850 6550
 NoConn ~ 2850 6550
+Wire Wire Line
+	8250 3400 8250 3500
+Wire Wire Line
+	8250 3500 8200 3500
+Wire Wire Line
+	8350 3400 8450 3400
 $Comp
-L Device:Net-Tie_2 NT?
-U 1 1 5F799F68
-P 8250 6100
-F 0 "NT?" H 8250 6281 50  0000 C CNN
-F 1 "Net-Tie_2" H 8250 6190 50  0000 C CNN
-F 2 "" H 8250 6100 50  0001 C CNN
-F 3 "~" H 8250 6100 50  0001 C CNN
-	1    8250 6100
+L power:GNDREF #PWR0138
+U 1 1 5F7D69C3
+P 8550 3500
+F 0 "#PWR0138" H 8550 3250 50  0001 C CNN
+F 1 "GNDREF" H 8555 3327 50  0000 C CNN
+F 2 "" H 8550 3500 50  0001 C CNN
+F 3 "" H 8550 3500 50  0001 C CNN
+	1    8550 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8050 6150 8050 6100
+	8450 3400 8550 3400
 Wire Wire Line
-	8050 6100 8150 6100
+	8550 3400 8550 3500
+Connection ~ 8450 3400
 Wire Wire Line
-	8350 6100 8450 6100
+	1600 3300 1800 3300
 Wire Wire Line
-	8450 6100 8450 6150
+	1600 3350 1600 3300
+Wire Wire Line
+	1050 3350 1600 3350
+Wire Wire Line
+	1050 3150 1600 3150
+Wire Wire Line
+	1600 3200 1600 3150
+Wire Wire Line
+	1800 3200 1600 3200
+$Comp
+L Device:Net-Tie_2 NT?
+U 1 1 5F800E7F
+P 8250 6050
+F 0 "NT?" H 8250 6231 50  0000 C CNN
+F 1 "Net-Tie_2" H 8250 6140 50  0000 C CNN
+F 2 "" H 8250 6050 50  0001 C CNN
+F 3 "~" H 8250 6050 50  0001 C CNN
+	1    8250 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 6050 8150 6050
+Wire Wire Line
+	8050 6050 8050 6150
+Wire Wire Line
+	8350 6050 8450 6050
+Wire Wire Line
+	8450 6050 8450 6150
 $EndSCHEMATC
