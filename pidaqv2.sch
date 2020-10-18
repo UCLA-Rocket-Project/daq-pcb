@@ -236,13 +236,13 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x06 J102
 U 1 1 5F721BF5
-P 850 3350
-F 0 "J102" H 768 2825 50  0000 C CNN
-F 1 "Screw_Terminal_01x06" H 768 2916 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-6_1x06_P2.54mm_Horizontal" H 850 3350 50  0001 C CNN
-F 3 "~" H 850 3350 50  0001 C CNN
-	1    850  3350
-	-1   0    0    1   
+P 850 3250
+F 0 "J102" H 768 2725 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" H 768 2816 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-6_1x06_P2.54mm_Horizontal" H 850 3250 50  0001 C CNN
+F 3 "~" H 850 3250 50  0001 C CNN
+	1    850  3250
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1050 3050 1800 3050
@@ -347,17 +347,7 @@ Wire Wire Line
 Text GLabel 2500 3700 2    50   Input ~ 0
 2.5V
 Wire Wire Line
-	-1150 1000 -1150 450 
-Wire Wire Line
-	-750 1100 -1200 1100
-Wire Wire Line
-	-1200 1100 -1200 550 
-Wire Wire Line
-	-750 1200 -1250 1200
-Wire Wire Line
 	3350 1950 2750 1950
-Wire Wire Line
-	-1350 1600 -1350 1300
 Wire Wire Line
 	2750 1650 1750 1650
 Wire Wire Line
@@ -417,10 +407,6 @@ F 3 "~" H 1500 1100 50  0001 C CNN
 	1    1500 1100
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	-1300 750  -1300 1300
-Wire Wire Line
-	-1250 650  -1250 1200
 Text Notes 1150 1200 2    50   ~ 0
 Extra terminals
 $Comp
