@@ -107,17 +107,6 @@ F 3 "~" H 9950 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H104
-U 1 1 5F4F092C
-P 9950 6100
-F 0 "H104" H 10050 6146 50  0000 L CNN
-F 1 "MountingHole" H 10050 6055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 9950 6100 50  0001 C CNN
-F 3 "~" H 9950 6100 50  0001 C CNN
-	1    9950 6100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H102
 U 1 1 5F4F2802
 P 9100 6050
@@ -263,43 +252,31 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5F6A340B
-P 9850 1600
-F 0 "#PWR0101" H 9850 1450 50  0001 C CNN
-F 1 "+3.3V" H 9865 1773 50  0000 C CNN
-F 2 "" H 9850 1600 50  0001 C CNN
-F 3 "" H 9850 1600 50  0001 C CNN
-	1    9850 1600
-	0    1    1    0   
+P 8800 1300
+F 0 "#PWR0101" H 8800 1150 50  0001 C CNN
+F 1 "+3.3V" H 8815 1473 50  0000 C CNN
+F 2 "" H 8800 1300 50  0001 C CNN
+F 3 "" H 8800 1300 50  0001 C CNN
+	1    8800 1300
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9550 1600 9850 1600
 $Comp
 L power:GND #PWR0103
 U 1 1 5F6AA8DA
-P 9550 3800
-F 0 "#PWR0103" H 9550 3550 50  0001 C CNN
-F 1 "GND" H 9555 3627 50  0000 C CNN
-F 2 "" H 9550 3800 50  0001 C CNN
-F 3 "" H 9550 3800 50  0001 C CNN
-	1    9550 3800
+P 7950 4500
+F 0 "#PWR0103" H 7950 4250 50  0001 C CNN
+F 1 "GND" H 7955 4327 50  0000 C CNN
+F 2 "" H 7950 4500 50  0001 C CNN
+F 3 "" H 7950 4500 50  0001 C CNN
+	1    7950 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 7450 3000 0    50   Output ~ 0
+Text GLabel 9450 3550 2    50   Output ~ 0
 SCLK
-Text GLabel 7450 3200 0    50   Input ~ 0
+Text GLabel 9450 3350 2    50   Input ~ 0
 MISO
-Text GLabel 7450 3100 0    50   Output ~ 0
+Text GLabel 9450 3450 2    50   Output ~ 0
 MOSI
-Wire Wire Line
-	7450 2900 7300 2900
-Wire Wire Line
-	7300 2900 7300 2850
-Wire Wire Line
-	7450 2800 7300 2800
-Wire Wire Line
-	7300 2800 7300 2700
-Wire Wire Line
-	7300 2700 7250 2700
 Wire Wire Line
 	2500 3300 2600 3300
 Text Label 3150 1350 0    50   ~ 0
@@ -390,16 +367,16 @@ Wire Wire Line
 	2950 6550 2850 6550
 NoConn ~ 2850 6550
 Wire Wire Line
-	9550 3700 9550 3800
+	7950 4400 7950 4500
 $Comp
 L power:GNDREF #PWR0138
 U 1 1 5F7D69C3
-P 9800 3600
-F 0 "#PWR0138" H 9800 3350 50  0001 C CNN
-F 1 "GNDREF" H 9805 3427 50  0000 C CNN
-F 2 "" H 9800 3600 50  0001 C CNN
-F 3 "" H 9800 3600 50  0001 C CNN
-	1    9800 3600
+P 8250 4500
+F 0 "#PWR0138" H 8250 4250 50  0001 C CNN
+F 1 "GNDREF" H 8255 4327 50  0000 C CNN
+F 2 "" H 8250 4500 50  0001 C CNN
+F 3 "" H 8250 4500 50  0001 C CNN
+	1    8250 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -448,40 +425,102 @@ Wire Wire Line
 	2850 1850 3350 1850
 Wire Wire Line
 	1700 1300 2850 1300
-$Comp
-L RASPBERRY_PI_3_MODEL_B_:RASPBERRY_PI_3_MODEL_B+ U1
-U 1 1 5FC69FBF
-P 8550 2400
-F 0 "U1" H 8500 3567 50  0000 C CNN
-F 1 "RASPBERRY_PI_3_MODEL_B+" H 8500 3476 50  0000 C CNN
-F 2 "MODULE_RASPBERRY_PI_3_MODEL_B+" H 8550 2400 50  0001 L BNN
-F 3 "" H 8550 2400 50  0001 L BNN
-F 4 "Manufacturer Recommendations" H 8550 2400 50  0001 L BNN "STANDARD"
-F 5 "18mm" H 8550 2400 50  0001 L BNN "MAXIMUM_PACKAGE_HIEGHT"
-F 6 "1.0" H 8550 2400 50  0001 L BNN "PARTREV"
-F 7 "Raspberry Pi" H 8550 2400 50  0001 L BNN "MANUFACTURER"
-	1    8550 2400
-	1    0    0    -1  
-$EndComp
-Text GLabel 7250 2700 0    50   Output ~ 0
+Text GLabel 9300 3100 2    50   Output ~ 0
 ~CS0
 Wire Wire Line
-	7300 2850 7250 2850
-Text GLabel 7250 2850 0    50   Output ~ 0
+	9250 2950 9300 2950
+Text GLabel 9300 2950 2    50   Output ~ 0
 ~CS1
-Wire Wire Line
-	9900 1500 9550 1500
-Wire Wire Line
-	9900 1350 9900 1500
 $Comp
 L power:+5V #PWR0102
 U 1 1 5F6A5CF8
-P 9900 1350
-F 0 "#PWR0102" H 9900 1200 50  0001 C CNN
-F 1 "+5V" H 9915 1523 50  0000 C CNN
-F 2 "" H 9900 1350 50  0001 C CNN
-F 3 "" H 9900 1350 50  0001 C CNN
-	1    9900 1350
-	0    1    1    0   
+P 8100 1350
+F 0 "#PWR0102" H 8100 1200 50  0001 C CNN
+F 1 "+5V" H 8115 1523 50  0000 C CNN
+F 2 "" H 8100 1350 50  0001 C CNN
+F 3 "" H 8100 1350 50  0001 C CNN
+	1    8100 1350
+	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Raspberry_Pi_2_3 J106
+U 1 1 5FCA078E
+P 8400 2950
+F 0 "J106" H 8400 4431 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 8400 4340 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 8400 2950 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 8400 2950 50  0001 C CNN
+	1    8400 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2950 9250 3050
+Wire Wire Line
+	9250 3050 9200 3050
+Wire Wire Line
+	8250 4400 8250 4500
+Wire Wire Line
+	7950 4400 8000 4400
+Wire Wire Line
+	8700 4250 8600 4250
+Connection ~ 8100 4250
+Wire Wire Line
+	8100 4250 8000 4250
+Connection ~ 8200 4250
+Wire Wire Line
+	8200 4250 8100 4250
+Connection ~ 8300 4250
+Wire Wire Line
+	8300 4250 8200 4250
+Connection ~ 8400 4250
+Wire Wire Line
+	8400 4250 8300 4250
+Connection ~ 8500 4250
+Wire Wire Line
+	8500 4250 8400 4250
+Connection ~ 8600 4250
+Wire Wire Line
+	8600 4250 8500 4250
+Wire Wire Line
+	8000 4250 8000 4400
+Connection ~ 8000 4250
+Connection ~ 8000 4400
+Wire Wire Line
+	8000 4400 8250 4400
+Wire Wire Line
+	8300 1650 8200 1650
+Wire Wire Line
+	8100 1650 8100 1350
+Connection ~ 8200 1650
+Wire Wire Line
+	8200 1650 8100 1650
+Wire Wire Line
+	8800 1300 8800 1650
+Wire Wire Line
+	8800 1650 8600 1650
+Connection ~ 8600 1650
+Wire Wire Line
+	8600 1650 8500 1650
+Wire Wire Line
+	9300 3100 9250 3100
+Wire Wire Line
+	9250 3100 9250 3150
+Wire Wire Line
+	9250 3150 9200 3150
+Wire Wire Line
+	9450 3350 9450 3250
+Wire Wire Line
+	9450 3250 9200 3250
+Wire Wire Line
+	9450 3450 9400 3450
+Wire Wire Line
+	9400 3450 9400 3350
+Wire Wire Line
+	9400 3350 9200 3350
+Wire Wire Line
+	9450 3550 9350 3550
+Wire Wire Line
+	9350 3550 9350 3450
+Wire Wire Line
+	9350 3450 9200 3450
 $EndSCHEMATC
